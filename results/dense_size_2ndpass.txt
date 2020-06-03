@@ -1,0 +1,1014 @@
+Model: "sequential_16"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+conv2d_93 (Conv2D)           (None, 224, 224, 24)      240       
+_________________________________________________________________
+max_pooling2d_92 (MaxPooling (None, 112, 112, 24)      0         
+_________________________________________________________________
+conv2d_94 (Conv2D)           (None, 112, 112, 24)      5208      
+_________________________________________________________________
+max_pooling2d_93 (MaxPooling (None, 56, 56, 24)        0         
+_________________________________________________________________
+conv2d_95 (Conv2D)           (None, 56, 56, 48)        10416     
+_________________________________________________________________
+max_pooling2d_94 (MaxPooling (None, 28, 28, 48)        0         
+_________________________________________________________________
+conv2d_96 (Conv2D)           (None, 28, 28, 72)        31176     
+_________________________________________________________________
+max_pooling2d_95 (MaxPooling (None, 14, 14, 72)        0         
+_________________________________________________________________
+conv2d_97 (Conv2D)           (None, 14, 14, 96)        62304     
+_________________________________________________________________
+max_pooling2d_96 (MaxPooling (None, 7, 7, 96)          0         
+_________________________________________________________________
+conv2d_98 (Conv2D)           (None, 7, 7, 120)         103800    
+_________________________________________________________________
+max_pooling2d_97 (MaxPooling (None, 4, 4, 120)         0         
+_________________________________________________________________
+flatten_16 (Flatten)         (None, 1920)              0         
+_________________________________________________________________
+dense_32 (Dense)             (None, 20)                38420     
+_________________________________________________________________
+dense_33 (Dense)             (None, 1)                 21        
+=================================================================
+Total params: 251,585
+Trainable params: 251,585
+Non-trainable params: 0
+_________________________________________________________________
+
+Fitting with Dense layer size = 8192 .
+
+WARNING:tensorflow:sample_weight modes were coerced from
+  ...
+    to  
+  ['...']
+WARNING:tensorflow:sample_weight modes were coerced from
+  ...
+    to  
+  ['...']
+Train for 259 steps, validate for 56 steps
+Epoch 1/20
+259/259 [==============================] - 43s 166ms/step - loss: 0.5697 - tp: 2457.0000 - fp: 458.0000 - tn: 628.0000 - fn: 594.0000 - accuracy: 0.7457 - precision: 0.8429 - recall: 0.8053 - auc: 0.7745 - val_loss: 0.5084 - val_tp: 567.0000 - val_fp: 82.0000 - val_tn: 147.0000 - val_fn: 91.0000 - val_accuracy: 0.8050 - val_precision: 0.8737 - val_recall: 0.8617 - val_auc: 0.8597
+Epoch 2/20
+259/259 [==============================] - 38s 146ms/step - loss: 0.4675 - tp: 2360.0000 - fp: 204.0000 - tn: 882.0000 - fn: 691.0000 - accuracy: 0.7837 - precision: 0.9204 - recall: 0.7735 - auc: 0.8596 - val_loss: 0.4920 - val_tp: 407.0000 - val_fp: 12.0000 - val_tn: 217.0000 - val_fn: 251.0000 - val_accuracy: 0.7035 - val_precision: 0.9714 - val_recall: 0.6185 - val_auc: 0.8772
+Epoch 3/20
+259/259 [==============================] - 38s 149ms/step - loss: 0.4403 - tp: 2408.0000 - fp: 189.0000 - tn: 897.0000 - fn: 643.0000 - accuracy: 0.7989 - precision: 0.9272 - recall: 0.7892 - auc: 0.8752 - val_loss: 0.4276 - val_tp: 584.0000 - val_fp: 71.0000 - val_tn: 158.0000 - val_fn: 74.0000 - val_accuracy: 0.8365 - val_precision: 0.8916 - val_recall: 0.8875 - val_auc: 0.9036
+Epoch 4/20
+259/259 [==============================] - 37s 143ms/step - loss: 0.4303 - tp: 2390.0000 - fp: 161.0000 - tn: 925.0000 - fn: 661.0000 - accuracy: 0.8013 - precision: 0.9369 - recall: 0.7833 - auc: 0.8826 - val_loss: 0.3804 - val_tp: 564.0000 - val_fp: 53.0000 - val_tn: 176.0000 - val_fn: 94.0000 - val_accuracy: 0.8343 - val_precision: 0.9141 - val_recall: 0.8571 - val_auc: 0.9106
+Epoch 5/20
+259/259 [==============================] - 38s 147ms/step - loss: 0.3848 - tp: 2479.0000 - fp: 144.0000 - tn: 942.0000 - fn: 572.0000 - accuracy: 0.8269 - precision: 0.9451 - recall: 0.8125 - auc: 0.9053 - val_loss: 0.3847 - val_tp: 583.0000 - val_fp: 52.0000 - val_tn: 177.0000 - val_fn: 75.0000 - val_accuracy: 0.8568 - val_precision: 0.9181 - val_recall: 0.8860 - val_auc: 0.9175
+Epoch 6/20
+259/259 [==============================] - 38s 145ms/step - loss: 0.3863 - tp: 2473.0000 - fp: 165.0000 - tn: 921.0000 - fn: 578.0000 - accuracy: 0.8204 - precision: 0.9375 - recall: 0.8106 - auc: 0.9047 - val_loss: 0.3609 - val_tp: 544.0000 - val_fp: 33.0000 - val_tn: 196.0000 - val_fn: 114.0000 - val_accuracy: 0.8343 - val_precision: 0.9428 - val_recall: 0.8267 - val_auc: 0.9228
+Epoch 7/20
+259/259 [==============================] - 38s 145ms/step - loss: 0.3728 - tp: 2517.0000 - fp: 155.0000 - tn: 931.0000 - fn: 534.0000 - accuracy: 0.8335 - precision: 0.9420 - recall: 0.8250 - auc: 0.9126 - val_loss: 0.3434 - val_tp: 520.0000 - val_fp: 18.0000 - val_tn: 211.0000 - val_fn: 138.0000 - val_accuracy: 0.8241 - val_precision: 0.9665 - val_recall: 0.7903 - val_auc: 0.9252
+Epoch 8/20
+259/259 [==============================] - 38s 146ms/step - loss: 0.3535 - tp: 2535.0000 - fp: 125.0000 - tn: 961.0000 - fn: 516.0000 - accuracy: 0.8451 - precision: 0.9530 - recall: 0.8309 - auc: 0.9239 - val_loss: 0.3243 - val_tp: 533.0000 - val_fp: 22.0000 - val_tn: 207.0000 - val_fn: 125.0000 - val_accuracy: 0.8343 - val_precision: 0.9604 - val_recall: 0.8100 - val_auc: 0.9346
+Epoch 9/20
+259/259 [==============================] - 37s 145ms/step - loss: 0.3437 - tp: 2566.0000 - fp: 138.0000 - tn: 948.0000 - fn: 485.0000 - accuracy: 0.8494 - precision: 0.9490 - recall: 0.8410 - auc: 0.9266 - val_loss: 0.3383 - val_tp: 580.0000 - val_fp: 44.0000 - val_tn: 185.0000 - val_fn: 78.0000 - val_accuracy: 0.8625 - val_precision: 0.9295 - val_recall: 0.8815 - val_auc: 0.9298
+Epoch 10/20
+259/259 [==============================] - 37s 145ms/step - loss: 0.3219 - tp: 2599.0000 - fp: 115.0000 - tn: 971.0000 - fn: 452.0000 - accuracy: 0.8629 - precision: 0.9576 - recall: 0.8519 - auc: 0.9344 - val_loss: 0.3400 - val_tp: 596.0000 - val_fp: 39.0000 - val_tn: 190.0000 - val_fn: 62.0000 - val_accuracy: 0.8861 - val_precision: 0.9386 - val_recall: 0.9058 - val_auc: 0.9347
+Epoch 11/20
+259/259 [==============================] - 37s 144ms/step - loss: 0.3105 - tp: 2623.0000 - fp: 134.0000 - tn: 952.0000 - fn: 428.0000 - accuracy: 0.8642 - precision: 0.9514 - recall: 0.8597 - auc: 0.9393 - val_loss: 0.2889 - val_tp: 545.0000 - val_fp: 14.0000 - val_tn: 215.0000 - val_fn: 113.0000 - val_accuracy: 0.8568 - val_precision: 0.9750 - val_recall: 0.8283 - val_auc: 0.9515
+Epoch 12/20
+259/259 [==============================] - 38s 145ms/step - loss: 0.3107 - tp: 2621.0000 - fp: 110.0000 - tn: 976.0000 - fn: 430.0000 - accuracy: 0.8695 - precision: 0.9597 - recall: 0.8591 - auc: 0.9392 - val_loss: 0.2994 - val_tp: 583.0000 - val_fp: 29.0000 - val_tn: 200.0000 - val_fn: 75.0000 - val_accuracy: 0.8828 - val_precision: 0.9526 - val_recall: 0.8860 - val_auc: 0.9443
+Epoch 13/20
+259/259 [==============================] - 37s 144ms/step - loss: 0.3010 - tp: 2647.0000 - fp: 114.0000 - tn: 972.0000 - fn: 404.0000 - accuracy: 0.8748 - precision: 0.9587 - recall: 0.8676 - auc: 0.9425 - val_loss: 0.3072 - val_tp: 549.0000 - val_fp: 17.0000 - val_tn: 212.0000 - val_fn: 109.0000 - val_accuracy: 0.8579 - val_precision: 0.9700 - val_recall: 0.8343 - val_auc: 0.9439
+Epoch 14/20
+259/259 [==============================] - 37s 144ms/step - loss: 0.2935 - tp: 2652.0000 - fp: 104.0000 - tn: 982.0000 - fn: 399.0000 - accuracy: 0.8784 - precision: 0.9623 - recall: 0.8692 - auc: 0.9455 - val_loss: 0.2759 - val_tp: 584.0000 - val_fp: 18.0000 - val_tn: 211.0000 - val_fn: 74.0000 - val_accuracy: 0.8963 - val_precision: 0.9701 - val_recall: 0.8875 - val_auc: 0.9492
+Epoch 15/20
+
+259/259 [==============================] - 38s 145ms/step - loss: 0.2885 - tp: 2668.0000 - fp: 108.0000 - tn: 978.0000 - fn: 383.0000 - accuracy: 0.8813 - precision: 0.9611 - recall: 0.8745 - auc: 0.9457 - val_loss: 0.2444 - val_tp: 598.0000 - val_fp: 19.0000 - val_tn: 210.0000 - val_fn: 60.0000 - val_accuracy: 0.9109 - val_precision: 0.9692 - val_recall: 0.9088 - val_auc: 0.9625
+Epoch 16/20
+259/259 [==============================] - 37s 144ms/step - loss: 0.2897 - tp: 2678.0000 - fp: 112.0000 - tn: 974.0000 - fn: 373.0000 - accuracy: 0.8828 - precision: 0.9599 - recall: 0.8777 - auc: 0.9467 - val_loss: 0.2559 - val_tp: 594.0000 - val_fp: 29.0000 - val_tn: 200.0000 - val_fn: 64.0000 - val_accuracy: 0.8952 - val_precision: 0.9535 - val_recall: 0.9027 - val_auc: 0.9587
+Epoch 17/20
+259/259 [==============================] - 37s 144ms/step - loss: 0.2799 - tp: 2668.0000 - fp: 114.0000 - tn: 972.0000 - fn: 383.0000 - accuracy: 0.8799 - precision: 0.9590 - recall: 0.8745 - auc: 0.9499 - val_loss: 0.4000 - val_tp: 631.0000 - val_fp: 75.0000 - val_tn: 154.0000 - val_fn: 27.0000 - val_accuracy: 0.8850 - val_precision: 0.8938 - val_recall: 0.9590 - val_auc: 0.9441
+Epoch 18/20
+259/259 [==============================] - 37s 143ms/step - loss: 0.2766 - tp: 2673.0000 - fp: 112.0000 - tn: 974.0000 - fn: 378.0000 - accuracy: 0.8816 - precision: 0.9598 - recall: 0.8761 - auc: 0.9512 - val_loss: 0.2654 - val_tp: 582.0000 - val_fp: 18.0000 - val_tn: 211.0000 - val_fn: 76.0000 - val_accuracy: 0.8940 - val_precision: 0.9700 - val_recall: 0.8845 - val_auc: 0.9572
+Epoch 19/20
+259/259 [==============================] - 38s 145ms/step - loss: 0.2690 - tp: 2710.0000 - fp: 104.0000 - tn: 982.0000 - fn: 341.0000 - accuracy: 0.8924 - precision: 0.9630 - recall: 0.8882 - auc: 0.9549 - val_loss: 0.2340 - val_tp: 591.0000 - val_fp: 17.0000 - val_tn: 212.0000 - val_fn: 67.0000 - val_accuracy: 0.9053 - val_precision: 0.9720 - val_recall: 0.8982 - val_auc: 0.9657
+Epoch 20/20
+259/259 [==============================] - 38s 147ms/step - loss: 0.2677 - tp: 2699.0000 - fp: 106.0000 - tn: 980.0000 - fn: 352.0000 - accuracy: 0.8893 - precision: 0.9622 - recall: 0.8846 - auc: 0.9548 - val_loss: 0.2223 - val_tp: 588.0000 - val_fp: 15.0000 - val_tn: 214.0000 - val_fn: 70.0000 - val_accuracy: 0.9042 - val_precision: 0.9751 - val_recall: 0.8936 - val_auc: 0.9682
+INFO:tensorflow:Assets written to: models\dense_2ndpass_20\assets
+Model: "sequential_17"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+conv2d_99 (Conv2D)           (None, 224, 224, 24)      240       
+_________________________________________________________________
+max_pooling2d_98 (MaxPooling (None, 112, 112, 24)      0         
+_________________________________________________________________
+conv2d_100 (Conv2D)          (None, 112, 112, 24)      5208      
+_________________________________________________________________
+max_pooling2d_99 (MaxPooling (None, 56, 56, 24)        0         
+_________________________________________________________________
+conv2d_101 (Conv2D)          (None, 56, 56, 48)        10416     
+_________________________________________________________________
+max_pooling2d_100 (MaxPoolin (None, 28, 28, 48)        0         
+_________________________________________________________________
+conv2d_102 (Conv2D)          (None, 28, 28, 72)        31176     
+_________________________________________________________________
+max_pooling2d_101 (MaxPoolin (None, 14, 14, 72)        0         
+_________________________________________________________________
+conv2d_103 (Conv2D)          (None, 14, 14, 96)        62304     
+_________________________________________________________________
+max_pooling2d_102 (MaxPoolin (None, 7, 7, 96)          0         
+_________________________________________________________________
+conv2d_104 (Conv2D)          (None, 7, 7, 120)         103800    
+_________________________________________________________________
+max_pooling2d_103 (MaxPoolin (None, 4, 4, 120)         0         
+_________________________________________________________________
+flatten_17 (Flatten)         (None, 1920)              0         
+_________________________________________________________________
+dense_34 (Dense)             (None, 24)                46104     
+_________________________________________________________________
+dense_35 (Dense)             (None, 1)                 25        
+=================================================================
+Total params: 259,273
+Trainable params: 259,273
+Non-trainable params: 0
+_________________________________________________________________
+
+Fitting with Dense layer size = 8192 .
+
+WARNING:tensorflow:sample_weight modes were coerced from
+  ...
+    to  
+  ['...']
+WARNING:tensorflow:sample_weight modes were coerced from
+  ...
+    to  
+  ['...']
+Train for 259 steps, validate for 56 steps
+Epoch 1/20
+259/259 [==============================] - 39s 151ms/step - loss: 0.6507 - tp: 1851.0000 - fp: 475.0000 - tn: 611.0000 - fn: 1200.0000 - accuracy: 0.5951 - precision: 0.7958 - recall: 0.6067 - auc: 0.6389 - val_loss: 0.5762 - val_tp: 289.0000 - val_fp: 10.0000 - val_tn: 219.0000 - val_fn: 369.0000 - val_accuracy: 0.5727 - val_precision: 0.9666 - val_recall: 0.4392 - val_auc: 0.8162
+Epoch 2/20
+259/259 [==============================] - 37s 144ms/step - loss: 0.5132 - tp: 2238.0000 - fp: 238.0000 - tn: 848.0000 - fn: 813.0000 - accuracy: 0.7460 - precision: 0.9039 - recall: 0.7335 - auc: 0.8250 - val_loss: 0.4641 - val_tp: 525.0000 - val_fp: 49.0000 - val_tn: 180.0000 - val_fn: 133.0000 - val_accuracy: 0.7948 - val_precision: 0.9146 - val_recall: 0.7979 - val_auc: 0.8741
+Epoch 3/20
+259/259 [==============================] - 38s 145ms/step - loss: 0.4356 - tp: 2355.0000 - fp: 160.0000 - tn: 926.0000 - fn: 696.0000 - accuracy: 0.7931 - precision: 0.9364 - recall: 0.7719 - auc: 0.8802 - val_loss: 0.3877 - val_tp: 548.0000 - val_fp: 32.0000 - val_tn: 197.0000 - val_fn: 110.0000 - val_accuracy: 0.8399 - val_precision: 0.9448 - val_recall: 0.8328 - val_auc: 0.9066
+Epoch 4/20
+259/259 [==============================] - 38s 146ms/step - loss: 0.4012 - tp: 2456.0000 - fp: 160.0000 - tn: 926.0000 - fn: 595.0000 - accuracy: 0.8175 - precision: 0.9388 - recall: 0.8050 - auc: 0.8992 - val_loss: 0.3700 - val_tp: 525.0000 - val_fp: 26.0000 - val_tn: 203.0000 - val_fn: 133.0000 - val_accuracy: 0.8207 - val_precision: 0.9528 - val_recall: 0.7979 - val_auc: 0.9107
+Epoch 5/20
+259/259 [==============================] - 37s 144ms/step - loss: 0.3887 - tp: 2456.0000 - fp: 151.0000 - tn: 935.0000 - fn: 595.0000 - accuracy: 0.8197 - precision: 0.9421 - recall: 0.8050 - auc: 0.9052 - val_loss: 0.3481 - val_tp: 527.0000 - val_fp: 21.0000 - val_tn: 208.0000 - val_fn: 131.0000 - val_accuracy: 0.8286 - val_precision: 0.9617 - val_recall: 0.8009 - val_auc: 0.9253
+Epoch 6/20
+259/259 [==============================] - 38s 146ms/step - loss: 0.3671 - tp: 2522.0000 - fp: 133.0000 - tn: 953.0000 - fn: 529.0000 - accuracy: 0.8400 - precision: 0.9499 - recall: 0.8266 - auc: 0.9159 - val_loss: 0.3437 - val_tp: 532.0000 - val_fp: 17.0000 - val_tn: 212.0000 - val_fn: 126.0000 - val_accuracy: 0.8388 - val_precision: 0.9690 - val_recall: 0.8085 - val_auc: 0.9233
+Epoch 7/20
+259/259 [==============================] - 38s 145ms/step - loss: 0.3630 - tp: 2503.0000 - fp: 136.0000 - tn: 950.0000 - fn: 548.0000 - accuracy: 0.8347 - precision: 0.9485 - recall: 0.8204 - auc: 0.9158 - val_loss: 0.3882 - val_tp: 594.0000 - val_fp: 54.0000 - val_tn: 175.0000 - val_fn: 64.0000 - val_accuracy: 0.8670 - val_precision: 0.9167 - val_recall: 0.9027 - val_auc: 0.9253
+Epoch 8/20
+259/259 [==============================] - 38s 145ms/step - loss: 0.3529 - tp: 2554.0000 - fp: 130.0000 - tn: 956.0000 - fn: 497.0000 - accuracy: 0.8484 - precision: 0.9516 - recall: 0.8371 - auc: 0.9198 - val_loss: 0.3786 - val_tp: 597.0000 - val_fp: 57.0000 - val_tn: 172.0000 - val_fn: 61.0000 - val_accuracy: 0.8670 - val_precision: 0.9128 - val_recall: 0.9073 - val_auc: 0.9283
+Epoch 9/20
+
+259/259 [==============================] - 38s 145ms/step - loss: 0.3366 - tp: 2552.0000 - fp: 113.0000 - tn: 973.0000 - fn: 499.0000 - accuracy: 0.8521 - precision: 0.9576 - recall: 0.8364 - auc: 0.9270 - val_loss: 0.3054 - val_tp: 560.0000 - val_fp: 27.0000 - val_tn: 202.0000 - val_fn: 98.0000 - val_accuracy: 0.8591 - val_precision: 0.9540 - val_recall: 0.8511 - val_auc: 0.9409
+Epoch 10/20
+259/259 [==============================] - 38s 145ms/step - loss: 0.3145 - tp: 2601.0000 - fp: 107.0000 - tn: 979.0000 - fn: 450.0000 - accuracy: 0.8654 - precision: 0.9605 - recall: 0.8525 - auc: 0.9365 - val_loss: 0.2812 - val_tp: 570.0000 - val_fp: 20.0000 - val_tn: 209.0000 - val_fn: 88.0000 - val_accuracy: 0.8782 - val_precision: 0.9661 - val_recall: 0.8663 - val_auc: 0.9497
+Epoch 11/20
+259/259 [==============================] - 37s 144ms/step - loss: 0.3049 - tp: 2622.0000 - fp: 106.0000 - tn: 980.0000 - fn: 429.0000 - accuracy: 0.8707 - precision: 0.9611 - recall: 0.8594 - auc: 0.9404 - val_loss: 0.2787 - val_tp: 582.0000 - val_fp: 22.0000 - val_tn: 207.0000 - val_fn: 76.0000 - val_accuracy: 0.8895 - val_precision: 0.9636 - val_recall: 0.8845 - val_auc: 0.9482
+Epoch 12/20
+259/259 [==============================] - 38s 146ms/step - loss: 0.3016 - tp: 2632.0000 - fp: 112.0000 - tn: 974.0000 - fn: 419.0000 - accuracy: 0.8716 - precision: 0.9592 - recall: 0.8627 - auc: 0.9420 - val_loss: 0.2717 - val_tp: 564.0000 - val_fp: 15.0000 - val_tn: 214.0000 - val_fn: 94.0000 - val_accuracy: 0.8771 - val_precision: 0.9741 - val_recall: 0.8571 - val_auc: 0.9512
+Epoch 13/20
+259/259 [==============================] - 37s 144ms/step - loss: 0.2931 - tp: 2651.0000 - fp: 112.0000 - tn: 974.0000 - fn: 400.0000 - accuracy: 0.8762 - precision: 0.9595 - recall: 0.8689 - auc: 0.9455 - val_loss: 0.2517 - val_tp: 611.0000 - val_fp: 28.0000 - val_tn: 201.0000 - val_fn: 47.0000 - val_accuracy: 0.9154 - val_precision: 0.9562 - val_recall: 0.9286 - val_auc: 0.9673
+Epoch 14/20
+259/259 [==============================] - 38s 145ms/step - loss: 0.2936 - tp: 2636.0000 - fp: 100.0000 - tn: 986.0000 - fn: 415.0000 - accuracy: 0.8755 - precision: 0.9635 - recall: 0.8640 - auc: 0.9441 - val_loss: 0.2650 - val_tp: 597.0000 - val_fp: 27.0000 - val_tn: 202.0000 - val_fn: 61.0000 - val_accuracy: 0.9008 - val_precision: 0.9567 - val_recall: 0.9073 - val_auc: 0.9578
+Epoch 15/20
+259/259 [==============================] - 38s 145ms/step - loss: 0.3133 - tp: 2615.0000 - fp: 115.0000 - tn: 971.0000 - fn: 436.0000 - accuracy: 0.8668 - precision: 0.9579 - recall: 0.8571 - auc: 0.9372 - val_loss: 0.3079 - val_tp: 540.0000 - val_fp: 16.0000 - val_tn: 213.0000 - val_fn: 118.0000 - val_accuracy: 0.8489 - val_precision: 0.9712 - val_recall: 0.8207 - val_auc: 0.9469
+Epoch 16/20
+259/259 [==============================] - 37s 145ms/step - loss: 0.2882 - tp: 2665.0000 - fp: 101.0000 - tn: 985.0000 - fn: 386.0000 - accuracy: 0.8823 - precision: 0.9635 - recall: 0.8735 - auc: 0.9469 - val_loss: 0.2567 - val_tp: 579.0000 - val_fp: 14.0000 - val_tn: 215.0000 - val_fn: 79.0000 - val_accuracy: 0.8952 - val_precision: 0.9764 - val_recall: 0.8799 - val_auc: 0.9569
+Epoch 17/20
+259/259 [==============================] - 37s 144ms/step - loss: 0.2776 - tp: 2677.0000 - fp: 100.0000 - tn: 986.0000 - fn: 374.0000 - accuracy: 0.8854 - precision: 0.9640 - recall: 0.8774 - auc: 0.9500 - val_loss: 0.2880 - val_tp: 531.0000 - val_fp: 11.0000 - val_tn: 218.0000 - val_fn: 127.0000 - val_accuracy: 0.8444 - val_precision: 0.9797 - val_recall: 0.8070 - val_auc: 0.9566
+Epoch 18/20
+259/259 [==============================] - 37s 144ms/step - loss: 0.2860 - tp: 2665.0000 - fp: 108.0000 - tn: 978.0000 - fn: 386.0000 - accuracy: 0.8806 - precision: 0.9611 - recall: 0.8735 - auc: 0.9477 - val_loss: 0.3099 - val_tp: 523.0000 - val_fp: 9.0000 - val_tn: 220.0000 - val_fn: 135.0000 - val_accuracy: 0.8377 - val_precision: 0.9831 - val_recall: 0.7948 - val_auc: 0.9520
+Epoch 19/20
+259/259 [==============================] - 37s 144ms/step - loss: 0.2750 - tp: 2679.0000 - fp: 87.0000 - tn: 999.0000 - fn: 372.0000 - accuracy: 0.8891 - precision: 0.9685 - recall: 0.8781 - auc: 0.9515 - val_loss: 0.2544 - val_tp: 597.0000 - val_fp: 28.0000 - val_tn: 201.0000 - val_fn: 61.0000 - val_accuracy: 0.8997 - val_precision: 0.9552 - val_recall: 0.9073 - val_auc: 0.9612
+Epoch 20/20
+259/259 [==============================] - 37s 144ms/step - loss: 0.2730 - tp: 2706.0000 - fp: 100.0000 - tn: 986.0000 - fn: 345.0000 - accuracy: 0.8924 - precision: 0.9644 - recall: 0.8869 - auc: 0.9515 - val_loss: 0.2573 - val_tp: 580.0000 - val_fp: 19.0000 - val_tn: 210.0000 - val_fn: 78.0000 - val_accuracy: 0.8906 - val_precision: 0.9683 - val_recall: 0.8815 - val_auc: 0.9595
+INFO:tensorflow:Assets written to: models\dense_2ndpass_24\assets
+Model: "sequential_18"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+conv2d_105 (Conv2D)          (None, 224, 224, 24)      240       
+_________________________________________________________________
+max_pooling2d_104 (MaxPoolin (None, 112, 112, 24)      0         
+_________________________________________________________________
+conv2d_106 (Conv2D)          (None, 112, 112, 24)      5208      
+_________________________________________________________________
+max_pooling2d_105 (MaxPoolin (None, 56, 56, 24)        0         
+_________________________________________________________________
+conv2d_107 (Conv2D)          (None, 56, 56, 48)        10416     
+_________________________________________________________________
+max_pooling2d_106 (MaxPoolin (None, 28, 28, 48)        0         
+_________________________________________________________________
+conv2d_108 (Conv2D)          (None, 28, 28, 72)        31176     
+_________________________________________________________________
+max_pooling2d_107 (MaxPoolin (None, 14, 14, 72)        0         
+_________________________________________________________________
+conv2d_109 (Conv2D)          (None, 14, 14, 96)        62304     
+_________________________________________________________________
+max_pooling2d_108 (MaxPoolin (None, 7, 7, 96)          0         
+_________________________________________________________________
+conv2d_110 (Conv2D)          (None, 7, 7, 120)         103800    
+_________________________________________________________________
+max_pooling2d_109 (MaxPoolin (None, 4, 4, 120)         0         
+_________________________________________________________________
+flatten_18 (Flatten)         (None, 1920)              0         
+_________________________________________________________________
+dense_36 (Dense)             (None, 28)                53788     
+_________________________________________________________________
+dense_37 (Dense)             (None, 1)                 29        
+=================================================================
+Total params: 266,961
+Trainable params: 266,961
+Non-trainable params: 0
+_________________________________________________________________
+
+Fitting with Dense layer size = 8192 .
+
+WARNING:tensorflow:sample_weight modes were coerced from
+  ...
+    to  
+  ['...']
+WARNING:tensorflow:sample_weight modes were coerced from
+  ...
+    to  
+  ['...']
+Train for 259 steps, validate for 56 steps
+Epoch 1/20
+259/259 [==============================] - 39s 151ms/step - loss: 0.6530 - tp: 1376.0000 - fp: 278.0000 - tn: 808.0000 - fn: 1675.0000 - accuracy: 0.5279 - precision: 0.8319 - recall: 0.4510 - auc: 0.6507 - val_loss: 0.5153 - val_tp: 520.0000 - val_fp: 64.0000 - val_tn: 165.0000 - val_fn: 138.0000 - val_accuracy: 0.7723 - val_precision: 0.8904 - val_recall: 0.7903 - val_auc: 0.8331
+Epoch 2/20
+259/259 [==============================] - 37s 145ms/step - loss: 0.5521 - tp: 2173.0000 - fp: 286.0000 - tn: 800.0000 - fn: 878.0000 - accuracy: 0.7186 - precision: 0.8837 - recall: 0.7122 - auc: 0.7920 - val_loss: 0.5133 - val_tp: 473.0000 - val_fp: 31.0000 - val_tn: 198.0000 - val_fn: 185.0000 - val_accuracy: 0.7565 - val_precision: 0.9385 - val_recall: 0.7188 - val_auc: 0.8540
+Epoch 3/20
+
+259/259 [==============================] - 37s 144ms/step - loss: 0.5144 - tp: 2264.0000 - fp: 245.0000 - tn: 841.0000 - fn: 787.0000 - accuracy: 0.7505 - precision: 0.9024 - recall: 0.7421 - auc: 0.8254 - val_loss: 0.4706 - val_tp: 500.0000 - val_fp: 51.0000 - val_tn: 178.0000 - val_fn: 158.0000 - val_accuracy: 0.7644 - val_precision: 0.9074 - val_recall: 0.7599 - val_auc: 0.8609
+Epoch 4/20
+259/259 [==============================] - 37s 144ms/step - loss: 0.4767 - tp: 2246.0000 - fp: 205.0000 - tn: 881.0000 - fn: 805.0000 - accuracy: 0.7559 - precision: 0.9164 - recall: 0.7362 - auc: 0.8516 - val_loss: 0.4066 - val_tp: 537.0000 - val_fp: 38.0000 - val_tn: 191.0000 - val_fn: 121.0000 - val_accuracy: 0.8207 - val_precision: 0.9339 - val_recall: 0.8161 - val_auc: 0.9102
+Epoch 5/20
+259/259 [==============================] - 37s 144ms/step - loss: 0.4181 - tp: 2377.0000 - fp: 136.0000 - tn: 950.0000 - fn: 674.0000 - accuracy: 0.8042 - precision: 0.9459 - recall: 0.7791 - auc: 0.8908 - val_loss: 0.3706 - val_tp: 563.0000 - val_fp: 38.0000 - val_tn: 191.0000 - val_fn: 95.0000 - val_accuracy: 0.8501 - val_precision: 0.9368 - val_recall: 0.8556 - val_auc: 0.9186
+Epoch 6/20
+259/259 [==============================] - 37s 144ms/step - loss: 0.3733 - tp: 2490.0000 - fp: 141.0000 - tn: 945.0000 - fn: 561.0000 - accuracy: 0.8303 - precision: 0.9464 - recall: 0.8161 - auc: 0.9134 - val_loss: 0.3392 - val_tp: 535.0000 - val_fp: 23.0000 - val_tn: 206.0000 - val_fn: 123.0000 - val_accuracy: 0.8354 - val_precision: 0.9588 - val_recall: 0.8131 - val_auc: 0.9297
+Epoch 7/20
+259/259 [==============================] - 37s 144ms/step - loss: 0.3593 - tp: 2529.0000 - fp: 135.0000 - tn: 951.0000 - fn: 522.0000 - accuracy: 0.8412 - precision: 0.9493 - recall: 0.8289 - auc: 0.9187 - val_loss: 0.3535 - val_tp: 493.0000 - val_fp: 12.0000 - val_tn: 217.0000 - val_fn: 165.0000 - val_accuracy: 0.8005 - val_precision: 0.9762 - val_recall: 0.7492 - val_auc: 0.9328
+Epoch 8/20
+259/259 [==============================] - 37s 144ms/step - loss: 0.3158 - tp: 2577.0000 - fp: 121.0000 - tn: 965.0000 - fn: 474.0000 - accuracy: 0.8562 - precision: 0.9552 - recall: 0.8446 - auc: 0.9379 - val_loss: 0.3083 - val_tp: 576.0000 - val_fp: 28.0000 - val_tn: 201.0000 - val_fn: 82.0000 - val_accuracy: 0.8760 - val_precision: 0.9536 - val_recall: 0.8754 - val_auc: 0.9419
+Epoch 9/20
+259/259 [==============================] - 37s 144ms/step - loss: 0.3215 - tp: 2604.0000 - fp: 124.0000 - tn: 962.0000 - fn: 447.0000 - accuracy: 0.8620 - precision: 0.9545 - recall: 0.8535 - auc: 0.9364 - val_loss: 0.2892 - val_tp: 565.0000 - val_fp: 23.0000 - val_tn: 206.0000 - val_fn: 93.0000 - val_accuracy: 0.8692 - val_precision: 0.9609 - val_recall: 0.8587 - val_auc: 0.9479
+Epoch 10/20
+259/259 [==============================] - 37s 144ms/step - loss: 0.3044 - tp: 2634.0000 - fp: 107.0000 - tn: 979.0000 - fn: 417.0000 - accuracy: 0.8733 - precision: 0.9610 - recall: 0.8633 - auc: 0.9413 - val_loss: 0.2642 - val_tp: 574.0000 - val_fp: 20.0000 - val_tn: 209.0000 - val_fn: 84.0000 - val_accuracy: 0.8828 - val_precision: 0.9663 - val_recall: 0.8723 - val_auc: 0.9551
+Epoch 11/20
+259/259 [==============================] - 37s 144ms/step - loss: 0.3051 - tp: 2680.0000 - fp: 107.0000 - tn: 979.0000 - fn: 371.0000 - accuracy: 0.8845 - precision: 0.9616 - recall: 0.8784 - auc: 0.9414 - val_loss: 0.2558 - val_tp: 578.0000 - val_fp: 22.0000 - val_tn: 207.0000 - val_fn: 80.0000 - val_accuracy: 0.8850 - val_precision: 0.9633 - val_recall: 0.8784 - val_auc: 0.9574
+Epoch 12/20
+259/259 [==============================] - 37s 143ms/step - loss: 0.2894 - tp: 2663.0000 - fp: 108.0000 - tn: 978.0000 - fn: 388.0000 - accuracy: 0.8801 - precision: 0.9610 - recall: 0.8728 - auc: 0.9461 - val_loss: 0.2828 - val_tp: 582.0000 - val_fp: 23.0000 - val_tn: 206.0000 - val_fn: 76.0000 - val_accuracy: 0.8884 - val_precision: 0.9620 - val_recall: 0.8845 - val_auc: 0.9485
+Epoch 13/20
+259/259 [==============================] - 37s 144ms/step - loss: 0.2818 - tp: 2662.0000 - fp: 105.0000 - tn: 981.0000 - fn: 389.0000 - accuracy: 0.8806 - precision: 0.9621 - recall: 0.8725 - auc: 0.9504 - val_loss: 0.2860 - val_tp: 618.0000 - val_fp: 33.0000 - val_tn: 196.0000 - val_fn: 40.0000 - val_accuracy: 0.9177 - val_precision: 0.9493 - val_recall: 0.9392 - val_auc: 0.9554
+Epoch 14/20
+259/259 [==============================] - 38s 145ms/step - loss: 0.2934 - tp: 2676.0000 - fp: 116.0000 - tn: 970.0000 - fn: 375.0000 - accuracy: 0.8813 - precision: 0.9585 - recall: 0.8771 - auc: 0.9461 - val_loss: 0.2706 - val_tp: 596.0000 - val_fp: 23.0000 - val_tn: 206.0000 - val_fn: 62.0000 - val_accuracy: 0.9042 - val_precision: 0.9628 - val_recall: 0.9058 - val_auc: 0.9580
+Epoch 15/20
+259/259 [==============================] - 37s 144ms/step - loss: 0.2833 - tp: 2679.0000 - fp: 113.0000 - tn: 973.0000 - fn: 372.0000 - accuracy: 0.8828 - precision: 0.9595 - recall: 0.8781 - auc: 0.9492 - val_loss: 0.3128 - val_tp: 523.0000 - val_fp: 13.0000 - val_tn: 216.0000 - val_fn: 135.0000 - val_accuracy: 0.8331 - val_precision: 0.9757 - val_recall: 0.7948 - val_auc: 0.9536
+Epoch 16/20
+259/259 [==============================] - 37s 144ms/step - loss: 0.2769 - tp: 2708.0000 - fp: 109.0000 - tn: 977.0000 - fn: 343.0000 - accuracy: 0.8907 - precision: 0.9613 - recall: 0.8876 - auc: 0.9514 - val_loss: 0.2940 - val_tp: 604.0000 - val_fp: 34.0000 - val_tn: 195.0000 - val_fn: 54.0000 - val_accuracy: 0.9008 - val_precision: 0.9467 - val_recall: 0.9179 - val_auc: 0.9489
+Epoch 17/20
+259/259 [==============================] - 38s 145ms/step - loss: 0.2680 - tp: 2698.0000 - fp: 98.0000 - tn: 988.0000 - fn: 353.0000 - accuracy: 0.8910 - precision: 0.9649 - recall: 0.8843 - auc: 0.9540 - val_loss: 0.2540 - val_tp: 573.0000 - val_fp: 13.0000 - val_tn: 216.0000 - val_fn: 85.0000 - val_accuracy: 0.8895 - val_precision: 0.9778 - val_recall: 0.8708 - val_auc: 0.9582
+Epoch 18/20
+259/259 [==============================] - 37s 144ms/step - loss: 0.2665 - tp: 2685.0000 - fp: 113.0000 - tn: 973.0000 - fn: 366.0000 - accuracy: 0.8842 - precision: 0.9596 - recall: 0.8800 - auc: 0.9561 - val_loss: 0.2537 - val_tp: 604.0000 - val_fp: 29.0000 - val_tn: 200.0000 - val_fn: 54.0000 - val_accuracy: 0.9064 - val_precision: 0.9542 - val_recall: 0.9179 - val_auc: 0.9596
+Epoch 19/20
+259/259 [==============================] - 37s 144ms/step - loss: 0.2671 - tp: 2716.0000 - fp: 102.0000 - tn: 984.0000 - fn: 335.0000 - accuracy: 0.8944 - precision: 0.9638 - recall: 0.8902 - auc: 0.9542 - val_loss: 0.2464 - val_tp: 559.0000 - val_fp: 13.0000 - val_tn: 216.0000 - val_fn: 99.0000 - val_accuracy: 0.8737 - val_precision: 0.9773 - val_recall: 0.8495 - val_auc: 0.9680
+Epoch 20/20
+259/259 [==============================] - 38s 145ms/step - loss: 0.2619 - tp: 2692.0000 - fp: 84.0000 - tn: 1002.0000 - fn: 359.0000 - accuracy: 0.8929 - precision: 0.9697 - recall: 0.8823 - auc: 0.9564 - val_loss: 0.2341 - val_tp: 584.0000 - val_fp: 12.0000 - val_tn: 217.0000 - val_fn: 74.0000 - val_accuracy: 0.9030 - val_precision: 0.9799 - val_recall: 0.8875 - val_auc: 0.9654
+INFO:tensorflow:Assets written to: models\dense_2ndpass_28\assets
+Model: "sequential_19"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+conv2d_111 (Conv2D)          (None, 224, 224, 24)      240       
+_________________________________________________________________
+max_pooling2d_110 (MaxPoolin (None, 112, 112, 24)      0         
+_________________________________________________________________
+conv2d_112 (Conv2D)          (None, 112, 112, 24)      5208      
+_________________________________________________________________
+max_pooling2d_111 (MaxPoolin (None, 56, 56, 24)        0         
+_________________________________________________________________
+conv2d_113 (Conv2D)          (None, 56, 56, 48)        10416     
+_________________________________________________________________
+max_pooling2d_112 (MaxPoolin (None, 28, 28, 48)        0         
+_________________________________________________________________
+conv2d_114 (Conv2D)          (None, 28, 28, 72)        31176     
+_________________________________________________________________
+max_pooling2d_113 (MaxPoolin (None, 14, 14, 72)        0         
+_________________________________________________________________
+conv2d_115 (Conv2D)          (None, 14, 14, 96)        62304     
+_________________________________________________________________
+max_pooling2d_114 (MaxPoolin (None, 7, 7, 96)          0         
+_________________________________________________________________
+conv2d_116 (Conv2D)          (None, 7, 7, 120)         103800    
+_________________________________________________________________
+max_pooling2d_115 (MaxPoolin (None, 4, 4, 120)         0         
+_________________________________________________________________
+flatten_19 (Flatten)         (None, 1920)              0         
+_________________________________________________________________
+dense_38 (Dense)             (None, 32)                61472     
+_________________________________________________________________
+dense_39 (Dense)             (None, 1)                 33        
+=================================================================
+Total params: 274,649
+Trainable params: 274,649
+Non-trainable params: 0
+_________________________________________________________________
+
+
+Fitting with Dense layer size = 8192 .
+
+WARNING:tensorflow:sample_weight modes were coerced from
+  ...
+    to  
+  ['...']
+WARNING:tensorflow:sample_weight modes were coerced from
+  ...
+    to  
+  ['...']
+Train for 259 steps, validate for 56 steps
+Epoch 1/20
+259/259 [==============================] - 39s 152ms/step - loss: 0.6174 - tp: 1689.0000 - fp: 288.0000 - tn: 798.0000 - fn: 1362.0000 - accuracy: 0.6012 - precision: 0.8543 - recall: 0.5536 - auc: 0.7069 - val_loss: 0.4613 - val_tp: 439.0000 - val_fp: 13.0000 - val_tn: 216.0000 - val_fn: 219.0000 - val_accuracy: 0.7384 - val_precision: 0.9712 - val_recall: 0.6672 - val_auc: 0.8854
+Epoch 2/20
+259/259 [==============================] - 37s 145ms/step - loss: 0.4569 - tp: 2354.0000 - fp: 173.0000 - tn: 913.0000 - fn: 697.0000 - accuracy: 0.7897 - precision: 0.9315 - recall: 0.7716 - auc: 0.8722 - val_loss: 0.4301 - val_tp: 446.0000 - val_fp: 13.0000 - val_tn: 216.0000 - val_fn: 212.0000 - val_accuracy: 0.7463 - val_precision: 0.9717 - val_recall: 0.6778 - val_auc: 0.9060
+Epoch 3/20
+259/259 [==============================] - 37s 145ms/step - loss: 0.4244 - tp: 2396.0000 - fp: 173.0000 - tn: 913.0000 - fn: 655.0000 - accuracy: 0.7999 - precision: 0.9327 - recall: 0.7853 - auc: 0.8865 - val_loss: 0.3844 - val_tp: 487.0000 - val_fp: 15.0000 - val_tn: 214.0000 - val_fn: 171.0000 - val_accuracy: 0.7903 - val_precision: 0.9701 - val_recall: 0.7401 - val_auc: 0.9134
+Epoch 4/20
+259/259 [==============================] - 37s 144ms/step - loss: 0.3865 - tp: 2444.0000 - fp: 139.0000 - tn: 947.0000 - fn: 607.0000 - accuracy: 0.8197 - precision: 0.9462 - recall: 0.8010 - auc: 0.9057 - val_loss: 0.3859 - val_tp: 475.0000 - val_fp: 14.0000 - val_tn: 215.0000 - val_fn: 183.0000 - val_accuracy: 0.7779 - val_precision: 0.9714 - val_recall: 0.7219 - val_auc: 0.9264
+Epoch 5/20
+259/259 [==============================] - 37s 144ms/step - loss: 0.3663 - tp: 2537.0000 - fp: 136.0000 - tn: 950.0000 - fn: 514.0000 - accuracy: 0.8429 - precision: 0.9491 - recall: 0.8315 - auc: 0.9148 - val_loss: 0.3956 - val_tp: 626.0000 - val_fp: 77.0000 - val_tn: 152.0000 - val_fn: 32.0000 - val_accuracy: 0.8771 - val_precision: 0.8905 - val_recall: 0.9514 - val_auc: 0.9403
+Epoch 6/20
+259/259 [==============================] - 38s 145ms/step - loss: 0.3444 - tp: 2546.0000 - fp: 135.0000 - tn: 951.0000 - fn: 505.0000 - accuracy: 0.8453 - precision: 0.9496 - recall: 0.8345 - auc: 0.9246 - val_loss: 0.3341 - val_tp: 584.0000 - val_fp: 34.0000 - val_tn: 195.0000 - val_fn: 74.0000 - val_accuracy: 0.8782 - val_precision: 0.9450 - val_recall: 0.8875 - val_auc: 0.9302
+Epoch 7/20
+259/259 [==============================] - 38s 147ms/step - loss: 0.3260 - tp: 2612.0000 - fp: 114.0000 - tn: 972.0000 - fn: 439.0000 - accuracy: 0.8663 - precision: 0.9582 - recall: 0.8561 - auc: 0.9323 - val_loss: 0.3404 - val_tp: 592.0000 - val_fp: 35.0000 - val_tn: 194.0000 - val_fn: 66.0000 - val_accuracy: 0.8861 - val_precision: 0.9442 - val_recall: 0.8997 - val_auc: 0.9422
+Epoch 8/20
+259/259 [==============================] - 38s 145ms/step - loss: 0.3305 - tp: 2598.0000 - fp: 131.0000 - tn: 955.0000 - fn: 453.0000 - accuracy: 0.8588 - precision: 0.9520 - recall: 0.8515 - auc: 0.9316 - val_loss: 0.2900 - val_tp: 566.0000 - val_fp: 23.0000 - val_tn: 206.0000 - val_fn: 92.0000 - val_accuracy: 0.8703 - val_precision: 0.9610 - val_recall: 0.8602 - val_auc: 0.9466
+Epoch 9/20
+259/259 [==============================] - 38s 146ms/step - loss: 0.3109 - tp: 2650.0000 - fp: 120.0000 - tn: 966.0000 - fn: 401.0000 - accuracy: 0.8741 - precision: 0.9567 - recall: 0.8686 - auc: 0.9399 - val_loss: 0.3056 - val_tp: 537.0000 - val_fp: 13.0000 - val_tn: 216.0000 - val_fn: 121.0000 - val_accuracy: 0.8489 - val_precision: 0.9764 - val_recall: 0.8161 - val_auc: 0.9470
+Epoch 10/20
+259/259 [==============================] - 38s 146ms/step - loss: 0.3120 - tp: 2620.0000 - fp: 118.0000 - tn: 968.0000 - fn: 431.0000 - accuracy: 0.8673 - precision: 0.9569 - recall: 0.8587 - auc: 0.9381 - val_loss: 0.2851 - val_tp: 577.0000 - val_fp: 22.0000 - val_tn: 207.0000 - val_fn: 81.0000 - val_accuracy: 0.8839 - val_precision: 0.9633 - val_recall: 0.8769 - val_auc: 0.9460
+Epoch 11/20
+259/259 [==============================] - 38s 146ms/step - loss: 0.2994 - tp: 2664.0000 - fp: 120.0000 - tn: 966.0000 - fn: 387.0000 - accuracy: 0.8774 - precision: 0.9569 - recall: 0.8732 - auc: 0.9441 - val_loss: 0.3296 - val_tp: 612.0000 - val_fp: 53.0000 - val_tn: 176.0000 - val_fn: 46.0000 - val_accuracy: 0.8884 - val_precision: 0.9203 - val_recall: 0.9301 - val_auc: 0.9444
+Epoch 12/20
+259/259 [==============================] - 38s 146ms/step - loss: 0.2863 - tp: 2667.0000 - fp: 103.0000 - tn: 983.0000 - fn: 384.0000 - accuracy: 0.8823 - precision: 0.9628 - recall: 0.8741 - auc: 0.9477 - val_loss: 0.2608 - val_tp: 579.0000 - val_fp: 18.0000 - val_tn: 211.0000 - val_fn: 79.0000 - val_accuracy: 0.8906 - val_precision: 0.9698 - val_recall: 0.8799 - val_auc: 0.9552
+Epoch 13/20
+259/259 [==============================] - 38s 146ms/step - loss: 0.2905 - tp: 2659.0000 - fp: 108.0000 - tn: 978.0000 - fn: 392.0000 - accuracy: 0.8791 - precision: 0.9610 - recall: 0.8715 - auc: 0.9461 - val_loss: 0.2534 - val_tp: 600.0000 - val_fp: 21.0000 - val_tn: 208.0000 - val_fn: 58.0000 - val_accuracy: 0.9109 - val_precision: 0.9662 - val_recall: 0.9119 - val_auc: 0.9669
+Epoch 14/20
+259/259 [==============================] - 38s 148ms/step - loss: 0.2711 - tp: 2702.0000 - fp: 96.0000 - tn: 990.0000 - fn: 349.0000 - accuracy: 0.8924 - precision: 0.9657 - recall: 0.8856 - auc: 0.9534 - val_loss: 0.3201 - val_tp: 611.0000 - val_fp: 49.0000 - val_tn: 180.0000 - val_fn: 47.0000 - val_accuracy: 0.8918 - val_precision: 0.9258 - val_recall: 0.9286 - val_auc: 0.9444
+Epoch 15/20
+259/259 [==============================] - 38s 146ms/step - loss: 0.2823 - tp: 2695.0000 - fp: 110.0000 - tn: 976.0000 - fn: 356.0000 - accuracy: 0.8874 - precision: 0.9608 - recall: 0.8833 - auc: 0.9490 - val_loss: 0.2693 - val_tp: 547.0000 - val_fp: 13.0000 - val_tn: 216.0000 - val_fn: 111.0000 - val_accuracy: 0.8602 - val_precision: 0.9768 - val_recall: 0.8313 - val_auc: 0.9567
+Epoch 16/20
+259/259 [==============================] - 38s 146ms/step - loss: 0.2746 - tp: 2681.0000 - fp: 115.0000 - tn: 971.0000 - fn: 370.0000 - accuracy: 0.8828 - precision: 0.9589 - recall: 0.8787 - auc: 0.9528 - val_loss: 0.2991 - val_tp: 567.0000 - val_fp: 17.0000 - val_tn: 212.0000 - val_fn: 91.0000 - val_accuracy: 0.8782 - val_precision: 0.9709 - val_recall: 0.8617 - val_auc: 0.9464
+Epoch 17/20
+259/259 [==============================] - 38s 146ms/step - loss: 0.2689 - tp: 2689.0000 - fp: 94.0000 - tn: 992.0000 - fn: 362.0000 - accuracy: 0.8898 - precision: 0.9662 - recall: 0.8814 - auc: 0.9530 - val_loss: 0.2444 - val_tp: 578.0000 - val_fp: 16.0000 - val_tn: 213.0000 - val_fn: 80.0000 - val_accuracy: 0.8918 - val_precision: 0.9731 - val_recall: 0.8784 - val_auc: 0.9634
+Epoch 18/20
+259/259 [==============================] - 38s 148ms/step - loss: 0.2658 - tp: 2716.0000 - fp: 99.0000 - tn: 987.0000 - fn: 335.0000 - accuracy: 0.8951 - precision: 0.9648 - recall: 0.8902 - auc: 0.9552 - val_loss: 0.2292 - val_tp: 599.0000 - val_fp: 23.0000 - val_tn: 206.0000 - val_fn: 59.0000 - val_accuracy: 0.9076 - val_precision: 0.9630 - val_recall: 0.9103 - val_auc: 0.9662
+Epoch 19/20
+259/259 [==============================] - 37s 144ms/step - loss: 0.2628 - tp: 2704.0000 - fp: 89.0000 - tn: 997.0000 - fn: 347.0000 - accuracy: 0.8946 - precision: 0.9681 - recall: 0.8863 - auc: 0.9557 - val_loss: 0.2491 - val_tp: 609.0000 - val_fp: 25.0000 - val_tn: 204.0000 - val_fn: 49.0000 - val_accuracy: 0.9166 - val_precision: 0.9606 - val_recall: 0.9255 - val_auc: 0.9629
+Epoch 20/20
+259/259 [==============================] - 37s 144ms/step - loss: 0.2576 - tp: 2700.0000 - fp: 97.0000 - tn: 989.0000 - fn: 351.0000 - accuracy: 0.8917 - precision: 0.9653 - recall: 0.8850 - auc: 0.9574 - val_loss: 0.2840 - val_tp: 552.0000 - val_fp: 12.0000 - val_tn: 217.0000 - val_fn: 106.0000 - val_accuracy: 0.8670 - val_precision: 0.9787 - val_recall: 0.8389 - val_auc: 0.9542
+INFO:tensorflow:Assets written to: models\dense_2ndpass_32\assets
+
+Model: "sequential_20"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+conv2d_117 (Conv2D)          (None, 224, 224, 24)      240       
+_________________________________________________________________
+max_pooling2d_116 (MaxPoolin (None, 112, 112, 24)      0         
+_________________________________________________________________
+conv2d_118 (Conv2D)          (None, 112, 112, 24)      5208      
+_________________________________________________________________
+max_pooling2d_117 (MaxPoolin (None, 56, 56, 24)        0         
+_________________________________________________________________
+conv2d_119 (Conv2D)          (None, 56, 56, 48)        10416     
+_________________________________________________________________
+max_pooling2d_118 (MaxPoolin (None, 28, 28, 48)        0         
+_________________________________________________________________
+conv2d_120 (Conv2D)          (None, 28, 28, 72)        31176     
+_________________________________________________________________
+max_pooling2d_119 (MaxPoolin (None, 14, 14, 72)        0         
+_________________________________________________________________
+conv2d_121 (Conv2D)          (None, 14, 14, 96)        62304     
+_________________________________________________________________
+max_pooling2d_120 (MaxPoolin (None, 7, 7, 96)          0         
+_________________________________________________________________
+conv2d_122 (Conv2D)          (None, 7, 7, 120)         103800    
+_________________________________________________________________
+max_pooling2d_121 (MaxPoolin (None, 4, 4, 120)         0         
+_________________________________________________________________
+flatten_20 (Flatten)         (None, 1920)              0         
+_________________________________________________________________
+dense_40 (Dense)             (None, 36)                69156     
+_________________________________________________________________
+dense_41 (Dense)             (None, 1)                 37        
+=================================================================
+Total params: 282,337
+Trainable params: 282,337
+Non-trainable params: 0
+_________________________________________________________________
+
+Fitting with Dense layer size = 8192 .
+
+WARNING:tensorflow:sample_weight modes were coerced from
+  ...
+    to  
+  ['...']
+WARNING:tensorflow:sample_weight modes were coerced from
+  ...
+    to  
+  ['...']
+Train for 259 steps, validate for 56 steps
+Epoch 1/20
+259/259 [==============================] - 40s 156ms/step - loss: 0.5809 - tp: 2219.0000 - fp: 376.0000 - tn: 710.0000 - fn: 832.0000 - accuracy: 0.7080 - precision: 0.8551 - recall: 0.7273 - auc: 0.7664 - val_loss: 0.4863 - val_tp: 564.0000 - val_fp: 73.0000 - val_tn: 156.0000 - val_fn: 94.0000 - val_accuracy: 0.8117 - val_precision: 0.8854 - val_recall: 0.8571 - val_auc: 0.8698
+Epoch 2/20
+259/259 [==============================] - 38s 145ms/step - loss: 0.4755 - tp: 2338.0000 - fp: 216.0000 - tn: 870.0000 - fn: 713.0000 - accuracy: 0.7754 - precision: 0.9154 - recall: 0.7663 - auc: 0.8543 - val_loss: 0.4086 - val_tp: 584.0000 - val_fp: 62.0000 - val_tn: 167.0000 - val_fn: 74.0000 - val_accuracy: 0.8467 - val_precision: 0.9040 - val_recall: 0.8875 - val_auc: 0.9058
+Epoch 3/20
+259/259 [==============================] - 38s 146ms/step - loss: 0.4283 - tp: 2389.0000 - fp: 179.0000 - tn: 907.0000 - fn: 662.0000 - accuracy: 0.7967 - precision: 0.9303 - recall: 0.7830 - auc: 0.8816 - val_loss: 0.3647 - val_tp: 530.0000 - val_fp: 14.0000 - val_tn: 215.0000 - val_fn: 128.0000 - val_accuracy: 0.8399 - val_precision: 0.9743 - val_recall: 0.8055 - val_auc: 0.9253
+Epoch 4/20
+259/259 [==============================] - 38s 147ms/step - loss: 0.4203 - tp: 2359.0000 - fp: 153.0000 - tn: 933.0000 - fn: 692.0000 - accuracy: 0.7957 - precision: 0.9391 - recall: 0.7732 - auc: 0.8868 - val_loss: 0.3454 - val_tp: 550.0000 - val_fp: 22.0000 - val_tn: 207.0000 - val_fn: 108.0000 - val_accuracy: 0.8534 - val_precision: 0.9615 - val_recall: 0.8359 - val_auc: 0.9243
+Epoch 5/20
+259/259 [==============================] - 38s 145ms/step - loss: 0.3790 - tp: 2465.0000 - fp: 131.0000 - tn: 955.0000 - fn: 586.0000 - accuracy: 0.8267 - precision: 0.9495 - recall: 0.8079 - auc: 0.9075 - val_loss: 0.3438 - val_tp: 509.0000 - val_fp: 12.0000 - val_tn: 217.0000 - val_fn: 149.0000 - val_accuracy: 0.8185 - val_precision: 0.9770 - val_recall: 0.7736 - val_auc: 0.9350
+Epoch 6/20
+259/259 [==============================] - 38s 146ms/step - loss: 0.3774 - tp: 2447.0000 - fp: 113.0000 - tn: 973.0000 - fn: 604.0000 - accuracy: 0.8267 - precision: 0.9559 - recall: 0.8020 - auc: 0.9075 - val_loss: 0.3157 - val_tp: 523.0000 - val_fp: 13.0000 - val_tn: 216.0000 - val_fn: 135.0000 - val_accuracy: 0.8331 - val_precision: 0.9757 - val_recall: 0.7948 - val_auc: 0.9411
+Epoch 7/20
+259/259 [==============================] - 38s 146ms/step - loss: 0.3618 - tp: 2502.0000 - fp: 115.0000 - tn: 971.0000 - fn: 549.0000 - accuracy: 0.8395 - precision: 0.9561 - recall: 0.8201 - auc: 0.9172 - val_loss: 0.3639 - val_tp: 493.0000 - val_fp: 9.0000 - val_tn: 220.0000 - val_fn: 165.0000 - val_accuracy: 0.8038 - val_precision: 0.9821 - val_recall: 0.7492 - val_auc: 0.9373
+Epoch 8/20
+259/259 [==============================] - 38s 146ms/step - loss: 0.3224 - tp: 2566.0000 - fp: 104.0000 - tn: 982.0000 - fn: 485.0000 - accuracy: 0.8576 - precision: 0.9610 - recall: 0.8410 - auc: 0.9331 - val_loss: 0.3422 - val_tp: 604.0000 - val_fp: 52.0000 - val_tn: 177.0000 - val_fn: 54.0000 - val_accuracy: 0.8805 - val_precision: 0.9207 - val_recall: 0.9179 - val_auc: 0.9410
+Epoch 9/20
+259/259 [==============================] - 38s 146ms/step - loss: 0.3203 - tp: 2555.0000 - fp: 113.0000 - tn: 973.0000 - fn: 496.0000 - accuracy: 0.8528 - precision: 0.9576 - recall: 0.8374 - auc: 0.9347 - val_loss: 0.3552 - val_tp: 532.0000 - val_fp: 19.0000 - val_tn: 210.0000 - val_fn: 126.0000 - val_accuracy: 0.8365 - val_precision: 0.9655 - val_recall: 0.8085 - val_auc: 0.9349
+Epoch 10/20
+259/259 [==============================] - 38s 146ms/step - loss: 0.3273 - tp: 2552.0000 - fp: 107.0000 - tn: 979.0000 - fn: 499.0000 - accuracy: 0.8535 - precision: 0.9598 - recall: 0.8364 - auc: 0.9318 - val_loss: 0.3268 - val_tp: 585.0000 - val_fp: 42.0000 - val_tn: 187.0000 - val_fn: 73.0000 - val_accuracy: 0.8703 - val_precision: 0.9330 - val_recall: 0.8891 - val_auc: 0.9358
+Epoch 11/20
+259/259 [==============================] - 41s 158ms/step - loss: 0.3114 - tp: 2576.0000 - fp: 107.0000 - tn: 979.0000 - fn: 475.0000 - accuracy: 0.8593 - precision: 0.9601 - recall: 0.8443 - auc: 0.9391 - val_loss: 0.2956 - val_tp: 598.0000 - val_fp: 32.0000 - val_tn: 197.0000 - val_fn: 60.0000 - val_accuracy: 0.8963 - val_precision: 0.9492 - val_recall: 0.9088 - val_auc: 0.9508
+Epoch 12/20
+259/259 [==============================] - 38s 147ms/step - loss: 0.3128 - tp: 2581.0000 - fp: 112.0000 - tn: 974.0000 - fn: 470.0000 - accuracy: 0.8593 - precision: 0.9584 - recall: 0.8460 - auc: 0.9384 - val_loss: 0.3008 - val_tp: 525.0000 - val_fp: 8.0000 - val_tn: 221.0000 - val_fn: 133.0000 - val_accuracy: 0.8410 - val_precision: 0.9850 - val_recall: 0.7979 - val_auc: 0.9555
+Epoch 13/20
+259/259 [==============================] - 38s 148ms/step - loss: 0.2900 - tp: 2631.0000 - fp: 102.0000 - tn: 984.0000 - fn: 420.0000 - accuracy: 0.8738 - precision: 0.9627 - recall: 0.8623 - auc: 0.9459 - val_loss: 0.3239 - val_tp: 556.0000 - val_fp: 27.0000 - val_tn: 202.0000 - val_fn: 102.0000 - val_accuracy: 0.8546 - val_precision: 0.9537 - val_recall: 0.8450 - val_auc: 0.9379
+Epoch 14/20
+259/259 [==============================] - 38s 147ms/step - loss: 0.2908 - tp: 2655.0000 - fp: 97.0000 - tn: 989.0000 - fn: 396.0000 - accuracy: 0.8808 - precision: 0.9648 - recall: 0.8702 - auc: 0.9460 - val_loss: 0.2966 - val_tp: 541.0000 - val_fp: 15.0000 - val_tn: 214.0000 - val_fn: 117.0000 - val_accuracy: 0.8512 - val_precision: 0.9730 - val_recall: 0.8222 - val_auc: 0.9461
+Epoch 15/20
+
+259/259 [==============================] - 38s 147ms/step - loss: 0.2770 - tp: 2658.0000 - fp: 89.0000 - tn: 997.0000 - fn: 393.0000 - accuracy: 0.8835 - precision: 0.9676 - recall: 0.8712 - auc: 0.9515 - val_loss: 0.2671 - val_tp: 571.0000 - val_fp: 20.0000 - val_tn: 209.0000 - val_fn: 87.0000 - val_accuracy: 0.8794 - val_precision: 0.9662 - val_recall: 0.8678 - val_auc: 0.9531
+Epoch 16/20
+259/259 [==============================] - 38s 145ms/step - loss: 0.2833 - tp: 2661.0000 - fp: 102.0000 - tn: 984.0000 - fn: 390.0000 - accuracy: 0.8811 - precision: 0.9631 - recall: 0.8722 - auc: 0.9488 - val_loss: 0.2692 - val_tp: 607.0000 - val_fp: 31.0000 - val_tn: 198.0000 - val_fn: 51.0000 - val_accuracy: 0.9076 - val_precision: 0.9514 - val_recall: 0.9225 - val_auc: 0.9586
+Epoch 17/20
+259/259 [==============================] - 38s 146ms/step - loss: 0.2802 - tp: 2671.0000 - fp: 97.0000 - tn: 989.0000 - fn: 380.0000 - accuracy: 0.8847 - precision: 0.9650 - recall: 0.8755 - auc: 0.9500 - val_loss: 0.2479 - val_tp: 579.0000 - val_fp: 17.0000 - val_tn: 212.0000 - val_fn: 79.0000 - val_accuracy: 0.8918 - val_precision: 0.9715 - val_recall: 0.8799 - val_auc: 0.9612
+Epoch 18/20
+259/259 [==============================] - 37s 145ms/step - loss: 0.2848 - tp: 2664.0000 - fp: 104.0000 - tn: 982.0000 - fn: 387.0000 - accuracy: 0.8813 - precision: 0.9624 - recall: 0.8732 - auc: 0.9487 - val_loss: 0.2705 - val_tp: 614.0000 - val_fp: 34.0000 - val_tn: 195.0000 - val_fn: 44.0000 - val_accuracy: 0.9121 - val_precision: 0.9475 - val_recall: 0.9331 - val_auc: 0.9608
+Epoch 19/20
+259/259 [==============================] - 38s 145ms/step - loss: 0.2610 - tp: 2700.0000 - fp: 95.0000 - tn: 991.0000 - fn: 351.0000 - accuracy: 0.8922 - precision: 0.9660 - recall: 0.8850 - auc: 0.9568 - val_loss: 0.2672 - val_tp: 602.0000 - val_fp: 28.0000 - val_tn: 201.0000 - val_fn: 56.0000 - val_accuracy: 0.9053 - val_precision: 0.9556 - val_recall: 0.9149 - val_auc: 0.9564
+Epoch 20/20
+259/259 [==============================] - 38s 148ms/step - loss: 0.2688 - tp: 2693.0000 - fp: 98.0000 - tn: 988.0000 - fn: 358.0000 - accuracy: 0.8898 - precision: 0.9649 - recall: 0.8827 - auc: 0.9540 - val_loss: 0.2366 - val_tp: 590.0000 - val_fp: 11.0000 - val_tn: 218.0000 - val_fn: 68.0000 - val_accuracy: 0.9109 - val_precision: 0.9817 - val_recall: 0.8967 - val_auc: 0.9656
+INFO:tensorflow:Assets written to: models\dense_2ndpass_36\assets
+Model: "sequential_21"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+conv2d_123 (Conv2D)          (None, 224, 224, 24)      240       
+_________________________________________________________________
+max_pooling2d_122 (MaxPoolin (None, 112, 112, 24)      0         
+_________________________________________________________________
+conv2d_124 (Conv2D)          (None, 112, 112, 24)      5208      
+_________________________________________________________________
+max_pooling2d_123 (MaxPoolin (None, 56, 56, 24)        0         
+_________________________________________________________________
+conv2d_125 (Conv2D)          (None, 56, 56, 48)        10416     
+_________________________________________________________________
+max_pooling2d_124 (MaxPoolin (None, 28, 28, 48)        0         
+_________________________________________________________________
+conv2d_126 (Conv2D)          (None, 28, 28, 72)        31176     
+_________________________________________________________________
+max_pooling2d_125 (MaxPoolin (None, 14, 14, 72)        0         
+_________________________________________________________________
+conv2d_127 (Conv2D)          (None, 14, 14, 96)        62304     
+_________________________________________________________________
+max_pooling2d_126 (MaxPoolin (None, 7, 7, 96)          0         
+_________________________________________________________________
+conv2d_128 (Conv2D)          (None, 7, 7, 120)         103800    
+_________________________________________________________________
+max_pooling2d_127 (MaxPoolin (None, 4, 4, 120)         0         
+_________________________________________________________________
+flatten_21 (Flatten)         (None, 1920)              0         
+_________________________________________________________________
+dense_42 (Dense)             (None, 40)                76840     
+_________________________________________________________________
+dense_43 (Dense)             (None, 1)                 41        
+=================================================================
+Total params: 290,025
+Trainable params: 290,025
+Non-trainable params: 0
+_________________________________________________________________
+
+Fitting with Dense layer size = 8192 .
+
+WARNING:tensorflow:sample_weight modes were coerced from
+  ...
+    to  
+  ['...']
+WARNING:tensorflow:sample_weight modes were coerced from
+  ...
+    to  
+  ['...']
+Train for 259 steps, validate for 56 steps
+Epoch 1/20
+259/259 [==============================] - 39s 152ms/step - loss: 0.6605 - tp: 1281.0000 - fp: 260.0000 - tn: 826.0000 - fn: 1770.0000 - accuracy: 0.5093 - precision: 0.8313 - recall: 0.4199 - auc: 0.6345 - val_loss: 0.5517 - val_tp: 587.0000 - val_fp: 101.0000 - val_tn: 128.0000 - val_fn: 71.0000 - val_accuracy: 0.8061 - val_precision: 0.8532 - val_recall: 0.8921 - val_auc: 0.8222
+Epoch 2/20
+259/259 [==============================] - 38s 146ms/step - loss: 0.4684 - tp: 2340.0000 - fp: 192.0000 - tn: 894.0000 - fn: 711.0000 - accuracy: 0.7817 - precision: 0.9242 - recall: 0.7670 - auc: 0.8652 - val_loss: 0.3891 - val_tp: 571.0000 - val_fp: 48.0000 - val_tn: 181.0000 - val_fn: 87.0000 - val_accuracy: 0.8478 - val_precision: 0.9225 - val_recall: 0.8678 - val_auc: 0.9041
+Epoch 3/20
+259/259 [==============================] - 38s 145ms/step - loss: 0.4063 - tp: 2475.0000 - fp: 154.0000 - tn: 932.0000 - fn: 576.0000 - accuracy: 0.8235 - precision: 0.9414 - recall: 0.8112 - auc: 0.8997 - val_loss: 0.5021 - val_tp: 630.0000 - val_fp: 106.0000 - val_tn: 123.0000 - val_fn: 28.0000 - val_accuracy: 0.8489 - val_precision: 0.8560 - val_recall: 0.9574 - val_auc: 0.9170
+Epoch 4/20
+259/259 [==============================] - 38s 145ms/step - loss: 0.3681 - tp: 2511.0000 - fp: 135.0000 - tn: 951.0000 - fn: 540.0000 - accuracy: 0.8368 - precision: 0.9490 - recall: 0.8230 - auc: 0.9132 - val_loss: 0.3348 - val_tp: 566.0000 - val_fp: 32.0000 - val_tn: 197.0000 - val_fn: 92.0000 - val_accuracy: 0.8602 - val_precision: 0.9465 - val_recall: 0.8602 - val_auc: 0.9275
+Epoch 5/20
+259/259 [==============================] - 38s 145ms/step - loss: 0.3558 - tp: 2524.0000 - fp: 135.0000 - tn: 951.0000 - fn: 527.0000 - accuracy: 0.8400 - precision: 0.9492 - recall: 0.8273 - auc: 0.9198 - val_loss: 0.3403 - val_tp: 590.0000 - val_fp: 43.0000 - val_tn: 186.0000 - val_fn: 68.0000 - val_accuracy: 0.8749 - val_precision: 0.9321 - val_recall: 0.8967 - val_auc: 0.9315
+Epoch 6/20
+259/259 [==============================] - 38s 145ms/step - loss: 0.3312 - tp: 2587.0000 - fp: 126.0000 - tn: 960.0000 - fn: 464.0000 - accuracy: 0.8574 - precision: 0.9536 - recall: 0.8479 - auc: 0.9301 - val_loss: 0.2658 - val_tp: 569.0000 - val_fp: 13.0000 - val_tn: 216.0000 - val_fn: 89.0000 - val_accuracy: 0.8850 - val_precision: 0.9777 - val_recall: 0.8647 - val_auc: 0.9562
+Epoch 7/20
+259/259 [==============================] - 38s 148ms/step - loss: 0.3296 - tp: 2592.0000 - fp: 117.0000 - tn: 969.0000 - fn: 459.0000 - accuracy: 0.8608 - precision: 0.9568 - recall: 0.8496 - auc: 0.9306 - val_loss: 0.3353 - val_tp: 614.0000 - val_fp: 40.0000 - val_tn: 189.0000 - val_fn: 44.0000 - val_accuracy: 0.9053 - val_precision: 0.9388 - val_recall: 0.9331 - val_auc: 0.9440
+Epoch 8/20
+259/259 [==============================] - 38s 147ms/step - loss: 0.2947 - tp: 2642.0000 - fp: 111.0000 - tn: 975.0000 - fn: 409.0000 - accuracy: 0.8743 - precision: 0.9597 - recall: 0.8659 - auc: 0.9444 - val_loss: 0.2861 - val_tp: 544.0000 - val_fp: 15.0000 - val_tn: 214.0000 - val_fn: 114.0000 - val_accuracy: 0.8546 - val_precision: 0.9732 - val_recall: 0.8267 - val_auc: 0.9549
+Epoch 9/20
+
+259/259 [==============================] - 38s 146ms/step - loss: 0.3173 - tp: 2632.0000 - fp: 118.0000 - tn: 968.0000 - fn: 419.0000 - accuracy: 0.8702 - precision: 0.9571 - recall: 0.8627 - auc: 0.9369 - val_loss: 0.2833 - val_tp: 583.0000 - val_fp: 19.0000 - val_tn: 210.0000 - val_fn: 75.0000 - val_accuracy: 0.8940 - val_precision: 0.9684 - val_recall: 0.8860 - val_auc: 0.9502
+Epoch 10/20
+259/259 [==============================] - 37s 144ms/step - loss: 0.3163 - tp: 2620.0000 - fp: 113.0000 - tn: 973.0000 - fn: 431.0000 - accuracy: 0.8685 - precision: 0.9587 - recall: 0.8587 - auc: 0.9368 - val_loss: 0.2710 - val_tp: 580.0000 - val_fp: 19.0000 - val_tn: 210.0000 - val_fn: 78.0000 - val_accuracy: 0.8906 - val_precision: 0.9683 - val_recall: 0.8815 - val_auc: 0.9535
+Epoch 11/20
+259/259 [==============================] - 38s 145ms/step - loss: 0.3010 - tp: 2632.0000 - fp: 101.0000 - tn: 985.0000 - fn: 419.0000 - accuracy: 0.8743 - precision: 0.9630 - recall: 0.8627 - auc: 0.9411 - val_loss: 0.3215 - val_tp: 526.0000 - val_fp: 15.0000 - val_tn: 214.0000 - val_fn: 132.0000 - val_accuracy: 0.8343 - val_precision: 0.9723 - val_recall: 0.7994 - val_auc: 0.9456
+Epoch 12/20
+259/259 [==============================] - 38s 145ms/step - loss: 0.2798 - tp: 2687.0000 - fp: 96.0000 - tn: 990.0000 - fn: 364.0000 - accuracy: 0.8888 - precision: 0.9655 - recall: 0.8807 - auc: 0.9495 - val_loss: 0.2460 - val_tp: 590.0000 - val_fp: 20.0000 - val_tn: 209.0000 - val_fn: 68.0000 - val_accuracy: 0.9008 - val_precision: 0.9672 - val_recall: 0.8967 - val_auc: 0.9590
+Epoch 13/20
+259/259 [==============================] - 37s 145ms/step - loss: 0.2779 - tp: 2692.0000 - fp: 96.0000 - tn: 990.0000 - fn: 359.0000 - accuracy: 0.8900 - precision: 0.9656 - recall: 0.8823 - auc: 0.9503 - val_loss: 0.2841 - val_tp: 568.0000 - val_fp: 18.0000 - val_tn: 211.0000 - val_fn: 90.0000 - val_accuracy: 0.8782 - val_precision: 0.9693 - val_recall: 0.8632 - val_auc: 0.9488
+Epoch 14/20
+259/259 [==============================] - 38s 146ms/step - loss: 0.2792 - tp: 2658.0000 - fp: 100.0000 - tn: 986.0000 - fn: 393.0000 - accuracy: 0.8808 - precision: 0.9637 - recall: 0.8712 - auc: 0.9508 - val_loss: 0.2810 - val_tp: 528.0000 - val_fp: 7.0000 - val_tn: 222.0000 - val_fn: 130.0000 - val_accuracy: 0.8455 - val_precision: 0.9869 - val_recall: 0.8024 - val_auc: 0.9625
+Epoch 15/20
+259/259 [==============================] - 38s 145ms/step - loss: 0.2870 - tp: 2641.0000 - fp: 103.0000 - tn: 983.0000 - fn: 410.0000 - accuracy: 0.8760 - precision: 0.9625 - recall: 0.8656 - auc: 0.9479 - val_loss: 0.2695 - val_tp: 562.0000 - val_fp: 13.0000 - val_tn: 216.0000 - val_fn: 96.0000 - val_accuracy: 0.8771 - val_precision: 0.9774 - val_recall: 0.8541 - val_auc: 0.9589
+Epoch 16/20
+259/259 [==============================] - 38s 145ms/step - loss: 0.2741 - tp: 2687.0000 - fp: 99.0000 - tn: 987.0000 - fn: 364.0000 - accuracy: 0.8881 - precision: 0.9645 - recall: 0.8807 - auc: 0.9519 - val_loss: 0.2360 - val_tp: 604.0000 - val_fp: 23.0000 - val_tn: 206.0000 - val_fn: 54.0000 - val_accuracy: 0.9132 - val_precision: 0.9633 - val_recall: 0.9179 - val_auc: 0.9658
+Epoch 17/20
+259/259 [==============================] - 37s 145ms/step - loss: 0.2690 - tp: 2692.0000 - fp: 108.0000 - tn: 978.0000 - fn: 359.0000 - accuracy: 0.8871 - precision: 0.9614 - recall: 0.8823 - auc: 0.9546 - val_loss: 0.2281 - val_tp: 595.0000 - val_fp: 19.0000 - val_tn: 210.0000 - val_fn: 63.0000 - val_accuracy: 0.9076 - val_precision: 0.9691 - val_recall: 0.9043 - val_auc: 0.9670
+Epoch 18/20
+259/259 [==============================] - 38s 145ms/step - loss: 0.2459 - tp: 2723.0000 - fp: 83.0000 - tn: 1003.0000 - fn: 328.0000 - accuracy: 0.9007 - precision: 0.9704 - recall: 0.8925 - auc: 0.9608 - val_loss: 0.2585 - val_tp: 603.0000 - val_fp: 27.0000 - val_tn: 202.0000 - val_fn: 55.0000 - val_accuracy: 0.9076 - val_precision: 0.9571 - val_recall: 0.9164 - val_auc: 0.9612
+Epoch 19/20
+259/259 [==============================] - 38s 145ms/step - loss: 0.2516 - tp: 2694.0000 - fp: 90.0000 - tn: 996.0000 - fn: 357.0000 - accuracy: 0.8920 - precision: 0.9677 - recall: 0.8830 - auc: 0.9595 - val_loss: 0.2682 - val_tp: 612.0000 - val_fp: 35.0000 - val_tn: 194.0000 - val_fn: 46.0000 - val_accuracy: 0.9087 - val_precision: 0.9459 - val_recall: 0.9301 - val_auc: 0.9634
+Epoch 20/20
+259/259 [==============================] - 37s 145ms/step - loss: 0.2628 - tp: 2680.0000 - fp: 87.0000 - tn: 999.0000 - fn: 371.0000 - accuracy: 0.8893 - precision: 0.9686 - recall: 0.8784 - auc: 0.9563 - val_loss: 0.2702 - val_tp: 605.0000 - val_fp: 33.0000 - val_tn: 196.0000 - val_fn: 53.0000 - val_accuracy: 0.9030 - val_precision: 0.9483 - val_recall: 0.9195 - val_auc: 0.9586
+INFO:tensorflow:Assets written to: models\dense_2ndpass_40\assets
+Model: "sequential_22"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+conv2d_129 (Conv2D)          (None, 224, 224, 24)      240       
+_________________________________________________________________
+max_pooling2d_128 (MaxPoolin (None, 112, 112, 24)      0         
+_________________________________________________________________
+conv2d_130 (Conv2D)          (None, 112, 112, 24)      5208      
+_________________________________________________________________
+max_pooling2d_129 (MaxPoolin (None, 56, 56, 24)        0         
+_________________________________________________________________
+conv2d_131 (Conv2D)          (None, 56, 56, 48)        10416     
+_________________________________________________________________
+max_pooling2d_130 (MaxPoolin (None, 28, 28, 48)        0         
+_________________________________________________________________
+conv2d_132 (Conv2D)          (None, 28, 28, 72)        31176     
+_________________________________________________________________
+max_pooling2d_131 (MaxPoolin (None, 14, 14, 72)        0         
+_________________________________________________________________
+conv2d_133 (Conv2D)          (None, 14, 14, 96)        62304     
+_________________________________________________________________
+max_pooling2d_132 (MaxPoolin (None, 7, 7, 96)          0         
+_________________________________________________________________
+conv2d_134 (Conv2D)          (None, 7, 7, 120)         103800    
+_________________________________________________________________
+max_pooling2d_133 (MaxPoolin (None, 4, 4, 120)         0         
+_________________________________________________________________
+flatten_22 (Flatten)         (None, 1920)              0         
+_________________________________________________________________
+dense_44 (Dense)             (None, 44)                84524     
+_________________________________________________________________
+dense_45 (Dense)             (None, 1)                 45        
+=================================================================
+Total params: 297,713
+Trainable params: 297,713
+Non-trainable params: 0
+_________________________________________________________________
+
+Fitting with Dense layer size = 8192 .
+
+WARNING:tensorflow:sample_weight modes were coerced from
+  ...
+    to  
+  ['...']
+WARNING:tensorflow:sample_weight modes were coerced from
+  ...
+    to  
+  ['...']
+Train for 259 steps, validate for 56 steps
+Epoch 1/20
+259/259 [==============================] - 39s 151ms/step - loss: 0.5439 - tp: 2261.0000 - fp: 322.0000 - tn: 764.0000 - fn: 790.0000 - accuracy: 0.7312 - precision: 0.8753 - recall: 0.7411 - auc: 0.8017 - val_loss: 0.4576 - val_tp: 539.0000 - val_fp: 61.0000 - val_tn: 168.0000 - val_fn: 119.0000 - val_accuracy: 0.7971 - val_precision: 0.8983 - val_recall: 0.8191 - val_auc: 0.8665
+Epoch 2/20
+259/259 [==============================] - 37s 145ms/step - loss: 0.4707 - tp: 2375.0000 - fp: 202.0000 - tn: 884.0000 - fn: 676.0000 - accuracy: 0.7878 - precision: 0.9216 - recall: 0.7784 - auc: 0.8590 - val_loss: 0.4205 - val_tp: 538.0000 - val_fp: 45.0000 - val_tn: 184.0000 - val_fn: 120.0000 - val_accuracy: 0.8140 - val_precision: 0.9228 - val_recall: 0.8176 - val_auc: 0.8876
+Epoch 3/20
+
+259/259 [==============================] - 37s 145ms/step - loss: 0.4595 - tp: 2318.0000 - fp: 185.0000 - tn: 901.0000 - fn: 733.0000 - accuracy: 0.7781 - precision: 0.9261 - recall: 0.7598 - auc: 0.8637 - val_loss: 0.3829 - val_tp: 513.0000 - val_fp: 24.0000 - val_tn: 205.0000 - val_fn: 145.0000 - val_accuracy: 0.8095 - val_precision: 0.9553 - val_recall: 0.7796 - val_auc: 0.9031
+Epoch 4/20
+259/259 [==============================] - 37s 145ms/step - loss: 0.4251 - tp: 2364.0000 - fp: 164.0000 - tn: 922.0000 - fn: 687.0000 - accuracy: 0.7943 - precision: 0.9351 - recall: 0.7748 - auc: 0.8853 - val_loss: 0.3746 - val_tp: 495.0000 - val_fp: 13.0000 - val_tn: 216.0000 - val_fn: 163.0000 - val_accuracy: 0.8016 - val_precision: 0.9744 - val_recall: 0.7523 - val_auc: 0.9137
+Epoch 5/20
+259/259 [==============================] - 38s 146ms/step - loss: 0.3896 - tp: 2462.0000 - fp: 142.0000 - tn: 944.0000 - fn: 589.0000 - accuracy: 0.8233 - precision: 0.9455 - recall: 0.8069 - auc: 0.9057 - val_loss: 0.3496 - val_tp: 552.0000 - val_fp: 36.0000 - val_tn: 193.0000 - val_fn: 106.0000 - val_accuracy: 0.8399 - val_precision: 0.9388 - val_recall: 0.8389 - val_auc: 0.9241
+Epoch 6/20
+259/259 [==============================] - 37s 145ms/step - loss: 0.3654 - tp: 2497.0000 - fp: 124.0000 - tn: 962.0000 - fn: 554.0000 - accuracy: 0.8361 - precision: 0.9527 - recall: 0.8184 - auc: 0.9149 - val_loss: 0.3362 - val_tp: 559.0000 - val_fp: 32.0000 - val_tn: 197.0000 - val_fn: 99.0000 - val_accuracy: 0.8523 - val_precision: 0.9459 - val_recall: 0.8495 - val_auc: 0.9266
+Epoch 7/20
+259/259 [==============================] - 37s 144ms/step - loss: 0.3579 - tp: 2511.0000 - fp: 133.0000 - tn: 953.0000 - fn: 540.0000 - accuracy: 0.8373 - precision: 0.9497 - recall: 0.8230 - auc: 0.9189 - val_loss: 0.3350 - val_tp: 519.0000 - val_fp: 16.0000 - val_tn: 213.0000 - val_fn: 139.0000 - val_accuracy: 0.8253 - val_precision: 0.9701 - val_recall: 0.7888 - val_auc: 0.9270
+Epoch 8/20
+259/259 [==============================] - 37s 144ms/step - loss: 0.3343 - tp: 2552.0000 - fp: 131.0000 - tn: 955.0000 - fn: 499.0000 - accuracy: 0.8477 - precision: 0.9512 - recall: 0.8364 - auc: 0.9300 - val_loss: 0.3451 - val_tp: 567.0000 - val_fp: 33.0000 - val_tn: 196.0000 - val_fn: 91.0000 - val_accuracy: 0.8602 - val_precision: 0.9450 - val_recall: 0.8617 - val_auc: 0.9248
+Epoch 9/20
+259/259 [==============================] - 37s 144ms/step - loss: 0.3383 - tp: 2548.0000 - fp: 134.0000 - tn: 952.0000 - fn: 503.0000 - accuracy: 0.8460 - precision: 0.9500 - recall: 0.8351 - auc: 0.9279 - val_loss: 0.3186 - val_tp: 530.0000 - val_fp: 16.0000 - val_tn: 213.0000 - val_fn: 128.0000 - val_accuracy: 0.8377 - val_precision: 0.9707 - val_recall: 0.8055 - val_auc: 0.9394
+Epoch 10/20
+259/259 [==============================] - 37s 145ms/step - loss: 0.3348 - tp: 2582.0000 - fp: 116.0000 - tn: 970.0000 - fn: 469.0000 - accuracy: 0.8586 - precision: 0.9570 - recall: 0.8463 - auc: 0.9280 - val_loss: 0.3082 - val_tp: 528.0000 - val_fp: 15.0000 - val_tn: 214.0000 - val_fn: 130.0000 - val_accuracy: 0.8365 - val_precision: 0.9724 - val_recall: 0.8024 - val_auc: 0.9452
+Epoch 11/20
+259/259 [==============================] - 38s 145ms/step - loss: 0.3300 - tp: 2588.0000 - fp: 125.0000 - tn: 961.0000 - fn: 463.0000 - accuracy: 0.8579 - precision: 0.9539 - recall: 0.8482 - auc: 0.9323 - val_loss: 0.3637 - val_tp: 510.0000 - val_fp: 13.0000 - val_tn: 216.0000 - val_fn: 148.0000 - val_accuracy: 0.8185 - val_precision: 0.9751 - val_recall: 0.7751 - val_auc: 0.9318
+Epoch 12/20
+259/259 [==============================] - 37s 144ms/step - loss: 0.3286 - tp: 2586.0000 - fp: 134.0000 - tn: 952.0000 - fn: 465.0000 - accuracy: 0.8552 - precision: 0.9507 - recall: 0.8476 - auc: 0.9320 - val_loss: 0.4017 - val_tp: 449.0000 - val_fp: 5.0000 - val_tn: 224.0000 - val_fn: 209.0000 - val_accuracy: 0.7587 - val_precision: 0.9890 - val_recall: 0.6824 - val_auc: 0.9412
+Epoch 13/20
+259/259 [==============================] - 37s 145ms/step - loss: 0.3025 - tp: 2603.0000 - fp: 110.0000 - tn: 976.0000 - fn: 448.0000 - accuracy: 0.8651 - precision: 0.9595 - recall: 0.8532 - auc: 0.9414 - val_loss: 0.2728 - val_tp: 552.0000 - val_fp: 13.0000 - val_tn: 216.0000 - val_fn: 106.0000 - val_accuracy: 0.8658 - val_precision: 0.9770 - val_recall: 0.8389 - val_auc: 0.9542
+Epoch 14/20
+259/259 [==============================] - 37s 145ms/step - loss: 0.3127 - tp: 2594.0000 - fp: 116.0000 - tn: 970.0000 - fn: 457.0000 - accuracy: 0.8615 - precision: 0.9572 - recall: 0.8502 - auc: 0.9392 - val_loss: 0.2937 - val_tp: 535.0000 - val_fp: 14.0000 - val_tn: 215.0000 - val_fn: 123.0000 - val_accuracy: 0.8455 - val_precision: 0.9745 - val_recall: 0.8131 - val_auc: 0.9510
+Epoch 15/20
+259/259 [==============================] - 37s 144ms/step - loss: 0.2974 - tp: 2636.0000 - fp: 102.0000 - tn: 984.0000 - fn: 415.0000 - accuracy: 0.8750 - precision: 0.9627 - recall: 0.8640 - auc: 0.9444 - val_loss: 0.2816 - val_tp: 585.0000 - val_fp: 28.0000 - val_tn: 201.0000 - val_fn: 73.0000 - val_accuracy: 0.8861 - val_precision: 0.9543 - val_recall: 0.8891 - val_auc: 0.9500
+Epoch 16/20
+259/259 [==============================] - 38s 146ms/step - loss: 0.2803 - tp: 2655.0000 - fp: 107.0000 - tn: 979.0000 - fn: 396.0000 - accuracy: 0.8784 - precision: 0.9613 - recall: 0.8702 - auc: 0.9504 - val_loss: 0.2977 - val_tp: 545.0000 - val_fp: 10.0000 - val_tn: 219.0000 - val_fn: 113.0000 - val_accuracy: 0.8613 - val_precision: 0.9820 - val_recall: 0.8283 - val_auc: 0.9551
+Epoch 17/20
+259/259 [==============================] - 37s 145ms/step - loss: 0.2792 - tp: 2675.0000 - fp: 108.0000 - tn: 978.0000 - fn: 376.0000 - accuracy: 0.8830 - precision: 0.9612 - recall: 0.8768 - auc: 0.9511 - val_loss: 0.2481 - val_tp: 583.0000 - val_fp: 19.0000 - val_tn: 210.0000 - val_fn: 75.0000 - val_accuracy: 0.8940 - val_precision: 0.9684 - val_recall: 0.8860 - val_auc: 0.9604
+Epoch 18/20
+259/259 [==============================] - 37s 144ms/step - loss: 0.2785 - tp: 2648.0000 - fp: 99.0000 - tn: 987.0000 - fn: 403.0000 - accuracy: 0.8787 - precision: 0.9640 - recall: 0.8679 - auc: 0.9506 - val_loss: 0.2799 - val_tp: 555.0000 - val_fp: 20.0000 - val_tn: 209.0000 - val_fn: 103.0000 - val_accuracy: 0.8613 - val_precision: 0.9652 - val_recall: 0.8435 - val_auc: 0.9511
+Epoch 19/20
+259/259 [==============================] - 37s 144ms/step - loss: 0.2625 - tp: 2703.0000 - fp: 93.0000 - tn: 993.0000 - fn: 348.0000 - accuracy: 0.8934 - precision: 0.9667 - recall: 0.8859 - auc: 0.9561 - val_loss: 0.2499 - val_tp: 579.0000 - val_fp: 18.0000 - val_tn: 211.0000 - val_fn: 79.0000 - val_accuracy: 0.8906 - val_precision: 0.9698 - val_recall: 0.8799 - val_auc: 0.9626
+Epoch 20/20
+259/259 [==============================] - 38s 145ms/step - loss: 0.2745 - tp: 2694.0000 - fp: 108.0000 - tn: 978.0000 - fn: 357.0000 - accuracy: 0.8876 - precision: 0.9615 - recall: 0.8830 - auc: 0.9529 - val_loss: 0.2658 - val_tp: 555.0000 - val_fp: 10.0000 - val_tn: 219.0000 - val_fn: 103.0000 - val_accuracy: 0.8726 - val_precision: 0.9823 - val_recall: 0.8435 - val_auc: 0.9611
+INFO:tensorflow:Assets written to: models\dense_2ndpass_44\assets
+Model: "sequential_23"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+conv2d_135 (Conv2D)          (None, 224, 224, 24)      240       
+_________________________________________________________________
+max_pooling2d_134 (MaxPoolin (None, 112, 112, 24)      0         
+_________________________________________________________________
+conv2d_136 (Conv2D)          (None, 112, 112, 24)      5208      
+_________________________________________________________________
+max_pooling2d_135 (MaxPoolin (None, 56, 56, 24)        0         
+_________________________________________________________________
+conv2d_137 (Conv2D)          (None, 56, 56, 48)        10416     
+_________________________________________________________________
+max_pooling2d_136 (MaxPoolin (None, 28, 28, 48)        0         
+_________________________________________________________________
+conv2d_138 (Conv2D)          (None, 28, 28, 72)        31176     
+_________________________________________________________________
+max_pooling2d_137 (MaxPoolin (None, 14, 14, 72)        0         
+_________________________________________________________________
+conv2d_139 (Conv2D)          (None, 14, 14, 96)        62304     
+_________________________________________________________________
+max_pooling2d_138 (MaxPoolin (None, 7, 7, 96)          0         
+_________________________________________________________________
+conv2d_140 (Conv2D)          (None, 7, 7, 120)         103800    
+_________________________________________________________________
+max_pooling2d_139 (MaxPoolin (None, 4, 4, 120)         0         
+_________________________________________________________________
+flatten_23 (Flatten)         (None, 1920)              0         
+_________________________________________________________________
+dense_46 (Dense)             (None, 48)                92208     
+_________________________________________________________________
+dense_47 (Dense)             (None, 1)                 49        
+=================================================================
+Total params: 305,401
+Trainable params: 305,401
+Non-trainable params: 0
+_________________________________________________________________
+
+
+Fitting with Dense layer size = 8192 .
+
+WARNING:tensorflow:sample_weight modes were coerced from
+  ...
+    to  
+  ['...']
+WARNING:tensorflow:sample_weight modes were coerced from
+  ...
+    to  
+  ['...']
+Train for 259 steps, validate for 56 steps
+Epoch 1/20
+259/259 [==============================] - 40s 154ms/step - loss: 0.5757 - tp: 2320.0000 - fp: 426.0000 - tn: 660.0000 - fn: 731.0000 - accuracy: 0.7203 - precision: 0.8449 - recall: 0.7604 - auc: 0.7698 - val_loss: 0.4457 - val_tp: 512.0000 - val_fp: 46.0000 - val_tn: 183.0000 - val_fn: 146.0000 - val_accuracy: 0.7835 - val_precision: 0.9176 - val_recall: 0.7781 - val_auc: 0.8703
+Epoch 2/20
+259/259 [==============================] - 38s 146ms/step - loss: 0.4451 - tp: 2378.0000 - fp: 185.0000 - tn: 901.0000 - fn: 673.0000 - accuracy: 0.7926 - precision: 0.9278 - recall: 0.7794 - auc: 0.8719 - val_loss: 0.3976 - val_tp: 530.0000 - val_fp: 25.0000 - val_tn: 204.0000 - val_fn: 128.0000 - val_accuracy: 0.8275 - val_precision: 0.9550 - val_recall: 0.8055 - val_auc: 0.9184
+Epoch 3/20
+259/259 [==============================] - 37s 144ms/step - loss: 0.4342 - tp: 2354.0000 - fp: 164.0000 - tn: 922.0000 - fn: 697.0000 - accuracy: 0.7919 - precision: 0.9349 - recall: 0.7716 - auc: 0.8797 - val_loss: 0.4616 - val_tp: 586.0000 - val_fp: 82.0000 - val_tn: 147.0000 - val_fn: 72.0000 - val_accuracy: 0.8264 - val_precision: 0.8772 - val_recall: 0.8906 - val_auc: 0.8832
+Epoch 4/20
+259/259 [==============================] - 37s 144ms/step - loss: 0.3747 - tp: 2510.0000 - fp: 153.0000 - tn: 933.0000 - fn: 541.0000 - accuracy: 0.8322 - precision: 0.9425 - recall: 0.8227 - auc: 0.9092 - val_loss: 0.3273 - val_tp: 541.0000 - val_fp: 25.0000 - val_tn: 204.0000 - val_fn: 117.0000 - val_accuracy: 0.8399 - val_precision: 0.9558 - val_recall: 0.8222 - val_auc: 0.9287
+Epoch 5/20
+259/259 [==============================] - 37s 144ms/step - loss: 0.3710 - tp: 2500.0000 - fp: 137.0000 - tn: 949.0000 - fn: 551.0000 - accuracy: 0.8337 - precision: 0.9480 - recall: 0.8194 - auc: 0.9127 - val_loss: 0.4337 - val_tp: 614.0000 - val_fp: 76.0000 - val_tn: 153.0000 - val_fn: 44.0000 - val_accuracy: 0.8647 - val_precision: 0.8899 - val_recall: 0.9331 - val_auc: 0.9237
+Epoch 6/20
+259/259 [==============================] - 38s 145ms/step - loss: 0.3554 - tp: 2502.0000 - fp: 130.0000 - tn: 956.0000 - fn: 549.0000 - accuracy: 0.8359 - precision: 0.9506 - recall: 0.8201 - auc: 0.9183 - val_loss: 0.4074 - val_tp: 453.0000 - val_fp: 9.0000 - val_tn: 220.0000 - val_fn: 205.0000 - val_accuracy: 0.7587 - val_precision: 0.9805 - val_recall: 0.6884 - val_auc: 0.9290
+Epoch 7/20
+259/259 [==============================] - 37s 145ms/step - loss: 0.3372 - tp: 2565.0000 - fp: 120.0000 - tn: 966.0000 - fn: 486.0000 - accuracy: 0.8535 - precision: 0.9553 - recall: 0.8407 - auc: 0.9284 - val_loss: 0.2857 - val_tp: 566.0000 - val_fp: 21.0000 - val_tn: 208.0000 - val_fn: 92.0000 - val_accuracy: 0.8726 - val_precision: 0.9642 - val_recall: 0.8602 - val_auc: 0.9468
+Epoch 8/20
+259/259 [==============================] - 38s 145ms/step - loss: 0.3233 - tp: 2594.0000 - fp: 122.0000 - tn: 964.0000 - fn: 457.0000 - accuracy: 0.8600 - precision: 0.9551 - recall: 0.8502 - auc: 0.9345 - val_loss: 0.3269 - val_tp: 521.0000 - val_fp: 13.0000 - val_tn: 216.0000 - val_fn: 137.0000 - val_accuracy: 0.8309 - val_precision: 0.9757 - val_recall: 0.7918 - val_auc: 0.9375
+Epoch 9/20
+259/259 [==============================] - 37s 145ms/step - loss: 0.3187 - tp: 2600.0000 - fp: 120.0000 - tn: 966.0000 - fn: 451.0000 - accuracy: 0.8620 - precision: 0.9559 - recall: 0.8522 - auc: 0.9351 - val_loss: 0.2985 - val_tp: 532.0000 - val_fp: 14.0000 - val_tn: 215.0000 - val_fn: 126.0000 - val_accuracy: 0.8422 - val_precision: 0.9744 - val_recall: 0.8085 - val_auc: 0.9502
+Epoch 10/20
+259/259 [==============================] - 37s 145ms/step - loss: 0.3052 - tp: 2607.0000 - fp: 105.0000 - tn: 981.0000 - fn: 444.0000 - accuracy: 0.8673 - precision: 0.9613 - recall: 0.8545 - auc: 0.9407 - val_loss: 0.2870 - val_tp: 608.0000 - val_fp: 37.0000 - val_tn: 192.0000 - val_fn: 50.0000 - val_accuracy: 0.9019 - val_precision: 0.9426 - val_recall: 0.9240 - val_auc: 0.9577
+Epoch 11/20
+259/259 [==============================] - 37s 145ms/step - loss: 0.2919 - tp: 2648.0000 - fp: 111.0000 - tn: 975.0000 - fn: 403.0000 - accuracy: 0.8758 - precision: 0.9598 - recall: 0.8679 - auc: 0.9467 - val_loss: 0.2876 - val_tp: 538.0000 - val_fp: 11.0000 - val_tn: 218.0000 - val_fn: 120.0000 - val_accuracy: 0.8523 - val_precision: 0.9800 - val_recall: 0.8176 - val_auc: 0.9515
+Epoch 12/20
+259/259 [==============================] - 37s 145ms/step - loss: 0.2999 - tp: 2628.0000 - fp: 104.0000 - tn: 982.0000 - fn: 423.0000 - accuracy: 0.8726 - precision: 0.9619 - recall: 0.8614 - auc: 0.9435 - val_loss: 0.3656 - val_tp: 624.0000 - val_fp: 68.0000 - val_tn: 161.0000 - val_fn: 34.0000 - val_accuracy: 0.8850 - val_precision: 0.9017 - val_recall: 0.9483 - val_auc: 0.9517
+Epoch 13/20
+259/259 [==============================] - 38s 145ms/step - loss: 0.2865 - tp: 2688.0000 - fp: 105.0000 - tn: 981.0000 - fn: 363.0000 - accuracy: 0.8869 - precision: 0.9624 - recall: 0.8810 - auc: 0.9476 - val_loss: 0.3233 - val_tp: 599.0000 - val_fp: 47.0000 - val_tn: 182.0000 - val_fn: 59.0000 - val_accuracy: 0.8805 - val_precision: 0.9272 - val_recall: 0.9103 - val_auc: 0.9473
+Epoch 14/20
+259/259 [==============================] - 37s 144ms/step - loss: 0.2649 - tp: 2706.0000 - fp: 99.0000 - tn: 987.0000 - fn: 345.0000 - accuracy: 0.8927 - precision: 0.9647 - recall: 0.8869 - auc: 0.9559 - val_loss: 0.3453 - val_tp: 503.0000 - val_fp: 9.0000 - val_tn: 220.0000 - val_fn: 155.0000 - val_accuracy: 0.8151 - val_precision: 0.9824 - val_recall: 0.7644 - val_auc: 0.9524
+Epoch 15/20
+259/259 [==============================] - 38s 145ms/step - loss: 0.2823 - tp: 2657.0000 - fp: 101.0000 - tn: 985.0000 - fn: 394.0000 - accuracy: 0.8803 - precision: 0.9634 - recall: 0.8709 - auc: 0.9484 - val_loss: 0.2832 - val_tp: 530.0000 - val_fp: 6.0000 - val_tn: 223.0000 - val_fn: 128.0000 - val_accuracy: 0.8489 - val_precision: 0.9888 - val_recall: 0.8055 - val_auc: 0.9574
+Epoch 16/20
+259/259 [==============================] - 37s 145ms/step - loss: 0.2699 - tp: 2690.0000 - fp: 96.0000 - tn: 990.0000 - fn: 361.0000 - accuracy: 0.8895 - precision: 0.9655 - recall: 0.8817 - auc: 0.9539 - val_loss: 0.2706 - val_tp: 580.0000 - val_fp: 22.0000 - val_tn: 207.0000 - val_fn: 78.0000 - val_accuracy: 0.8873 - val_precision: 0.9635 - val_recall: 0.8815 - val_auc: 0.9543
+Epoch 17/20
+259/259 [==============================] - 37s 145ms/step - loss: 0.2709 - tp: 2666.0000 - fp: 96.0000 - tn: 990.0000 - fn: 385.0000 - accuracy: 0.8837 - precision: 0.9652 - recall: 0.8738 - auc: 0.9543 - val_loss: 0.2270 - val_tp: 598.0000 - val_fp: 19.0000 - val_tn: 210.0000 - val_fn: 60.0000 - val_accuracy: 0.9109 - val_precision: 0.9692 - val_recall: 0.9088 - val_auc: 0.9650
+Epoch 18/20
+259/259 [==============================] - 37s 145ms/step - loss: 0.2581 - tp: 2721.0000 - fp: 99.0000 - tn: 987.0000 - fn: 330.0000 - accuracy: 0.8963 - precision: 0.9649 - recall: 0.8918 - auc: 0.9574 - val_loss: 0.2448 - val_tp: 571.0000 - val_fp: 15.0000 - val_tn: 214.0000 - val_fn: 87.0000 - val_accuracy: 0.8850 - val_precision: 0.9744 - val_recall: 0.8678 - val_auc: 0.9639
+Epoch 19/20
+259/259 [==============================] - 37s 144ms/step - loss: 0.2612 - tp: 2702.0000 - fp: 103.0000 - tn: 983.0000 - fn: 349.0000 - accuracy: 0.8907 - precision: 0.9633 - recall: 0.8856 - auc: 0.9571 - val_loss: 0.2806 - val_tp: 617.0000 - val_fp: 43.0000 - val_tn: 186.0000 - val_fn: 41.0000 - val_accuracy: 0.9053 - val_precision: 0.9348 - val_recall: 0.9377 - val_auc: 0.9580
+Epoch 20/20
+259/259 [==============================] - 38s 145ms/step - loss: 0.2458 - tp: 2756.0000 - fp: 88.0000 - tn: 998.0000 - fn: 295.0000 - accuracy: 0.9074 - precision: 0.9691 - recall: 0.9033 - auc: 0.9611 - val_loss: 0.3246 - val_tp: 515.0000 - val_fp: 10.0000 - val_tn: 219.0000 - val_fn: 143.0000 - val_accuracy: 0.8275 - val_precision: 0.9810 - val_recall: 0.7827 - val_auc: 0.9590
+INFO:tensorflow:Assets written to: models\dense_2ndpass_48\assets
+
+Model: "sequential_24"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+conv2d_141 (Conv2D)          (None, 224, 224, 24)      240       
+_________________________________________________________________
+max_pooling2d_140 (MaxPoolin (None, 112, 112, 24)      0         
+_________________________________________________________________
+conv2d_142 (Conv2D)          (None, 112, 112, 24)      5208      
+_________________________________________________________________
+max_pooling2d_141 (MaxPoolin (None, 56, 56, 24)        0         
+_________________________________________________________________
+conv2d_143 (Conv2D)          (None, 56, 56, 48)        10416     
+_________________________________________________________________
+max_pooling2d_142 (MaxPoolin (None, 28, 28, 48)        0         
+_________________________________________________________________
+conv2d_144 (Conv2D)          (None, 28, 28, 72)        31176     
+_________________________________________________________________
+max_pooling2d_143 (MaxPoolin (None, 14, 14, 72)        0         
+_________________________________________________________________
+conv2d_145 (Conv2D)          (None, 14, 14, 96)        62304     
+_________________________________________________________________
+max_pooling2d_144 (MaxPoolin (None, 7, 7, 96)          0         
+_________________________________________________________________
+conv2d_146 (Conv2D)          (None, 7, 7, 120)         103800    
+_________________________________________________________________
+max_pooling2d_145 (MaxPoolin (None, 4, 4, 120)         0         
+_________________________________________________________________
+flatten_24 (Flatten)         (None, 1920)              0         
+_________________________________________________________________
+dense_48 (Dense)             (None, 52)                99892     
+_________________________________________________________________
+dense_49 (Dense)             (None, 1)                 53        
+=================================================================
+Total params: 313,089
+Trainable params: 313,089
+Non-trainable params: 0
+_________________________________________________________________
+
+Fitting with Dense layer size = 8192 .
+
+WARNING:tensorflow:sample_weight modes were coerced from
+  ...
+    to  
+  ['...']
+WARNING:tensorflow:sample_weight modes were coerced from
+  ...
+    to  
+  ['...']
+Train for 259 steps, validate for 56 steps
+Epoch 1/20
+259/259 [==============================] - 39s 152ms/step - loss: 0.6839 - tp: 2146.0000 - fp: 736.0000 - tn: 350.0000 - fn: 905.0000 - accuracy: 0.6033 - precision: 0.7446 - recall: 0.7034 - auc: 0.5214 - val_loss: 0.6747 - val_tp: 574.0000 - val_fp: 202.0000 - val_tn: 27.0000 - val_fn: 84.0000 - val_accuracy: 0.6776 - val_precision: 0.7397 - val_recall: 0.8723 - val_auc: 0.5038
+Epoch 2/20
+259/259 [==============================] - 37s 144ms/step - loss: 0.6237 - tp: 1274.0000 - fp: 178.0000 - tn: 908.0000 - fn: 1777.0000 - accuracy: 0.5274 - precision: 0.8774 - recall: 0.4176 - auc: 0.6610 - val_loss: 0.5316 - val_tp: 334.0000 - val_fp: 13.0000 - val_tn: 216.0000 - val_fn: 324.0000 - val_accuracy: 0.6201 - val_precision: 0.9625 - val_recall: 0.5076 - val_auc: 0.7678
+Epoch 3/20
+259/259 [==============================] - 37s 145ms/step - loss: 0.5031 - tp: 2119.0000 - fp: 192.0000 - tn: 894.0000 - fn: 932.0000 - accuracy: 0.7283 - precision: 0.9169 - recall: 0.6945 - auc: 0.8338 - val_loss: 0.4614 - val_tp: 435.0000 - val_fp: 17.0000 - val_tn: 212.0000 - val_fn: 223.0000 - val_accuracy: 0.7294 - val_precision: 0.9624 - val_recall: 0.6611 - val_auc: 0.8890
+Epoch 4/20
+259/259 [==============================] - 37s 145ms/step - loss: 0.4177 - tp: 2361.0000 - fp: 168.0000 - tn: 918.0000 - fn: 690.0000 - accuracy: 0.7926 - precision: 0.9336 - recall: 0.7738 - auc: 0.8886 - val_loss: 0.4076 - val_tp: 529.0000 - val_fp: 32.0000 - val_tn: 197.0000 - val_fn: 129.0000 - val_accuracy: 0.8185 - val_precision: 0.9430 - val_recall: 0.8040 - val_auc: 0.8913
+Epoch 5/20
+259/259 [==============================] - 38s 145ms/step - loss: 0.4035 - tp: 2426.0000 - fp: 145.0000 - tn: 941.0000 - fn: 625.0000 - accuracy: 0.8139 - precision: 0.9436 - recall: 0.7951 - auc: 0.8977 - val_loss: 0.3619 - val_tp: 549.0000 - val_fp: 35.0000 - val_tn: 194.0000 - val_fn: 109.0000 - val_accuracy: 0.8377 - val_precision: 0.9401 - val_recall: 0.8343 - val_auc: 0.9139
+Epoch 6/20
+259/259 [==============================] - 37s 145ms/step - loss: 0.3763 - tp: 2476.0000 - fp: 145.0000 - tn: 941.0000 - fn: 575.0000 - accuracy: 0.8260 - precision: 0.9447 - recall: 0.8115 - auc: 0.9103 - val_loss: 0.3772 - val_tp: 551.0000 - val_fp: 33.0000 - val_tn: 196.0000 - val_fn: 107.0000 - val_accuracy: 0.8422 - val_precision: 0.9435 - val_recall: 0.8374 - val_auc: 0.9159
+Epoch 7/20
+259/259 [==============================] - 37s 145ms/step - loss: 0.3670 - tp: 2500.0000 - fp: 135.0000 - tn: 951.0000 - fn: 551.0000 - accuracy: 0.8342 - precision: 0.9488 - recall: 0.8194 - auc: 0.9154 - val_loss: 0.3967 - val_tp: 458.0000 - val_fp: 8.0000 - val_tn: 221.0000 - val_fn: 200.0000 - val_accuracy: 0.7655 - val_precision: 0.9828 - val_recall: 0.6960 - val_auc: 0.9311
+Epoch 8/20
+259/259 [==============================] - 38s 145ms/step - loss: 0.3634 - tp: 2524.0000 - fp: 131.0000 - tn: 955.0000 - fn: 527.0000 - accuracy: 0.8409 - precision: 0.9507 - recall: 0.8273 - auc: 0.9176 - val_loss: 0.3141 - val_tp: 541.0000 - val_fp: 20.0000 - val_tn: 209.0000 - val_fn: 117.0000 - val_accuracy: 0.8455 - val_precision: 0.9643 - val_recall: 0.8222 - val_auc: 0.9413
+Epoch 9/20
+259/259 [==============================] - 38s 145ms/step - loss: 0.3404 - tp: 2588.0000 - fp: 124.0000 - tn: 962.0000 - fn: 463.0000 - accuracy: 0.8581 - precision: 0.9543 - recall: 0.8482 - auc: 0.9269 - val_loss: 0.3735 - val_tp: 494.0000 - val_fp: 12.0000 - val_tn: 217.0000 - val_fn: 164.0000 - val_accuracy: 0.8016 - val_precision: 0.9763 - val_recall: 0.7508 - val_auc: 0.9324
+Epoch 10/20
+259/259 [==============================] - 37s 145ms/step - loss: 0.3479 - tp: 2562.0000 - fp: 125.0000 - tn: 961.0000 - fn: 489.0000 - accuracy: 0.8516 - precision: 0.9535 - recall: 0.8397 - auc: 0.9238 - val_loss: 0.3434 - val_tp: 523.0000 - val_fp: 16.0000 - val_tn: 213.0000 - val_fn: 135.0000 - val_accuracy: 0.8298 - val_precision: 0.9703 - val_recall: 0.7948 - val_auc: 0.9312
+Epoch 11/20
+259/259 [==============================] - 37s 145ms/step - loss: 0.3372 - tp: 2593.0000 - fp: 114.0000 - tn: 972.0000 - fn: 458.0000 - accuracy: 0.8617 - precision: 0.9579 - recall: 0.8499 - auc: 0.9281 - val_loss: 0.3155 - val_tp: 531.0000 - val_fp: 13.0000 - val_tn: 216.0000 - val_fn: 127.0000 - val_accuracy: 0.8422 - val_precision: 0.9761 - val_recall: 0.8070 - val_auc: 0.9419
+Epoch 12/20
+259/259 [==============================] - 38s 145ms/step - loss: 0.3195 - tp: 2584.0000 - fp: 122.0000 - tn: 964.0000 - fn: 467.0000 - accuracy: 0.8576 - precision: 0.9549 - recall: 0.8469 - auc: 0.9355 - val_loss: 0.3070 - val_tp: 563.0000 - val_fp: 25.0000 - val_tn: 204.0000 - val_fn: 95.0000 - val_accuracy: 0.8647 - val_precision: 0.9575 - val_recall: 0.8556 - val_auc: 0.9386
+Epoch 13/20
+259/259 [==============================] - 37s 144ms/step - loss: 0.3055 - tp: 2633.0000 - fp: 117.0000 - tn: 969.0000 - fn: 418.0000 - accuracy: 0.8707 - precision: 0.9575 - recall: 0.8630 - auc: 0.9410 - val_loss: 0.3225 - val_tp: 545.0000 - val_fp: 19.0000 - val_tn: 210.0000 - val_fn: 113.0000 - val_accuracy: 0.8512 - val_precision: 0.9663 - val_recall: 0.8283 - val_auc: 0.9375
+Epoch 14/20
+259/259 [==============================] - 38s 146ms/step - loss: 0.3006 - tp: 2642.0000 - fp: 117.0000 - tn: 969.0000 - fn: 409.0000 - accuracy: 0.8729 - precision: 0.9576 - recall: 0.8659 - auc: 0.9423 - val_loss: 0.2944 - val_tp: 544.0000 - val_fp: 12.0000 - val_tn: 217.0000 - val_fn: 114.0000 - val_accuracy: 0.8579 - val_precision: 0.9784 - val_recall: 0.8267 - val_auc: 0.9504
+Epoch 15/20
+
+259/259 [==============================] - 37s 144ms/step - loss: 0.3169 - tp: 2616.0000 - fp: 110.0000 - tn: 976.0000 - fn: 435.0000 - accuracy: 0.8683 - precision: 0.9596 - recall: 0.8574 - auc: 0.9356 - val_loss: 0.3205 - val_tp: 607.0000 - val_fp: 48.0000 - val_tn: 181.0000 - val_fn: 51.0000 - val_accuracy: 0.8884 - val_precision: 0.9267 - val_recall: 0.9225 - val_auc: 0.9489
+Epoch 16/20
+259/259 [==============================] - 37s 145ms/step - loss: 0.3063 - tp: 2632.0000 - fp: 105.0000 - tn: 981.0000 - fn: 419.0000 - accuracy: 0.8733 - precision: 0.9616 - recall: 0.8627 - auc: 0.9407 - val_loss: 0.2836 - val_tp: 601.0000 - val_fp: 31.0000 - val_tn: 198.0000 - val_fn: 57.0000 - val_accuracy: 0.9008 - val_precision: 0.9509 - val_recall: 0.9134 - val_auc: 0.9527
+Epoch 17/20
+259/259 [==============================] - 37s 144ms/step - loss: 0.2883 - tp: 2668.0000 - fp: 102.0000 - tn: 984.0000 - fn: 383.0000 - accuracy: 0.8828 - precision: 0.9632 - recall: 0.8745 - auc: 0.9467 - val_loss: 0.3302 - val_tp: 617.0000 - val_fp: 53.0000 - val_tn: 176.0000 - val_fn: 41.0000 - val_accuracy: 0.8940 - val_precision: 0.9209 - val_recall: 0.9377 - val_auc: 0.9494
+Epoch 18/20
+259/259 [==============================] - 38s 145ms/step - loss: 0.2871 - tp: 2639.0000 - fp: 114.0000 - tn: 972.0000 - fn: 412.0000 - accuracy: 0.8729 - precision: 0.9586 - recall: 0.8650 - auc: 0.9473 - val_loss: 0.2912 - val_tp: 562.0000 - val_fp: 14.0000 - val_tn: 215.0000 - val_fn: 96.0000 - val_accuracy: 0.8760 - val_precision: 0.9757 - val_recall: 0.8541 - val_auc: 0.9510
+Epoch 19/20
+259/259 [==============================] - 38s 145ms/step - loss: 0.2894 - tp: 2654.0000 - fp: 95.0000 - tn: 991.0000 - fn: 397.0000 - accuracy: 0.8811 - precision: 0.9654 - recall: 0.8699 - auc: 0.9467 - val_loss: 0.2721 - val_tp: 612.0000 - val_fp: 32.0000 - val_tn: 197.0000 - val_fn: 46.0000 - val_accuracy: 0.9121 - val_precision: 0.9503 - val_recall: 0.9301 - val_auc: 0.9593
+Epoch 20/20
+259/259 [==============================] - 37s 144ms/step - loss: 0.2910 - tp: 2665.0000 - fp: 102.0000 - tn: 984.0000 - fn: 386.0000 - accuracy: 0.8820 - precision: 0.9631 - recall: 0.8735 - auc: 0.9456 - val_loss: 0.2657 - val_tp: 611.0000 - val_fp: 33.0000 - val_tn: 196.0000 - val_fn: 47.0000 - val_accuracy: 0.9098 - val_precision: 0.9488 - val_recall: 0.9286 - val_auc: 0.9621
+INFO:tensorflow:Assets written to: models\dense_2ndpass_52\assets
+Model: "sequential_25"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+conv2d_147 (Conv2D)          (None, 224, 224, 24)      240       
+_________________________________________________________________
+max_pooling2d_146 (MaxPoolin (None, 112, 112, 24)      0         
+_________________________________________________________________
+conv2d_148 (Conv2D)          (None, 112, 112, 24)      5208      
+_________________________________________________________________
+max_pooling2d_147 (MaxPoolin (None, 56, 56, 24)        0         
+_________________________________________________________________
+conv2d_149 (Conv2D)          (None, 56, 56, 48)        10416     
+_________________________________________________________________
+max_pooling2d_148 (MaxPoolin (None, 28, 28, 48)        0         
+_________________________________________________________________
+conv2d_150 (Conv2D)          (None, 28, 28, 72)        31176     
+_________________________________________________________________
+max_pooling2d_149 (MaxPoolin (None, 14, 14, 72)        0         
+_________________________________________________________________
+conv2d_151 (Conv2D)          (None, 14, 14, 96)        62304     
+_________________________________________________________________
+max_pooling2d_150 (MaxPoolin (None, 7, 7, 96)          0         
+_________________________________________________________________
+conv2d_152 (Conv2D)          (None, 7, 7, 120)         103800    
+_________________________________________________________________
+max_pooling2d_151 (MaxPoolin (None, 4, 4, 120)         0         
+_________________________________________________________________
+flatten_25 (Flatten)         (None, 1920)              0         
+_________________________________________________________________
+dense_50 (Dense)             (None, 56)                107576    
+_________________________________________________________________
+dense_51 (Dense)             (None, 1)                 57        
+=================================================================
+Total params: 320,777
+Trainable params: 320,777
+Non-trainable params: 0
+_________________________________________________________________
+
+Fitting with Dense layer size = 8192 .
+
+WARNING:tensorflow:sample_weight modes were coerced from
+  ...
+    to  
+  ['...']
+WARNING:tensorflow:sample_weight modes were coerced from
+  ...
+    to  
+  ['...']
+Train for 259 steps, validate for 56 steps
+Epoch 1/20
+259/259 [==============================] - 39s 151ms/step - loss: 0.6258 - tp: 1423.0000 - fp: 215.0000 - tn: 871.0000 - fn: 1628.0000 - accuracy: 0.5545 - precision: 0.8687 - recall: 0.4664 - auc: 0.7022 - val_loss: 0.5026 - val_tp: 499.0000 - val_fp: 52.0000 - val_tn: 177.0000 - val_fn: 159.0000 - val_accuracy: 0.7621 - val_precision: 0.9056 - val_recall: 0.7584 - val_auc: 0.8289
+Epoch 2/20
+259/259 [==============================] - 37s 144ms/step - loss: 0.5445 - tp: 2200.0000 - fp: 260.0000 - tn: 826.0000 - fn: 851.0000 - accuracy: 0.7314 - precision: 0.8943 - recall: 0.7211 - auc: 0.8051 - val_loss: 0.5452 - val_tp: 370.0000 - val_fp: 29.0000 - val_tn: 200.0000 - val_fn: 288.0000 - val_accuracy: 0.6426 - val_precision: 0.9273 - val_recall: 0.5623 - val_auc: 0.8201
+Epoch 3/20
+259/259 [==============================] - 37s 144ms/step - loss: 0.5800 - tp: 2116.0000 - fp: 279.0000 - tn: 807.0000 - fn: 935.0000 - accuracy: 0.7066 - precision: 0.8835 - recall: 0.6935 - auc: 0.7769 - val_loss: 0.4709 - val_tp: 550.0000 - val_fp: 61.0000 - val_tn: 168.0000 - val_fn: 108.0000 - val_accuracy: 0.8095 - val_precision: 0.9002 - val_recall: 0.8359 - val_auc: 0.8629
+Epoch 4/20
+259/259 [==============================] - 37s 144ms/step - loss: 0.4995 - tp: 2212.0000 - fp: 214.0000 - tn: 872.0000 - fn: 839.0000 - accuracy: 0.7455 - precision: 0.9118 - recall: 0.7250 - auc: 0.8358 - val_loss: 0.5208 - val_tp: 580.0000 - val_fp: 95.0000 - val_tn: 134.0000 - val_fn: 78.0000 - val_accuracy: 0.8050 - val_precision: 0.8593 - val_recall: 0.8815 - val_auc: 0.8533
+Epoch 5/20
+259/259 [==============================] - 37s 144ms/step - loss: 0.4896 - tp: 2280.0000 - fp: 198.0000 - tn: 888.0000 - fn: 771.0000 - accuracy: 0.7658 - precision: 0.9201 - recall: 0.7473 - auc: 0.8480 - val_loss: 0.4743 - val_tp: 410.0000 - val_fp: 10.0000 - val_tn: 219.0000 - val_fn: 248.0000 - val_accuracy: 0.7091 - val_precision: 0.9762 - val_recall: 0.6231 - val_auc: 0.8974
+Epoch 6/20
+259/259 [==============================] - 37s 144ms/step - loss: 0.3974 - tp: 2429.0000 - fp: 150.0000 - tn: 936.0000 - fn: 622.0000 - accuracy: 0.8134 - precision: 0.9418 - recall: 0.7961 - auc: 0.9007 - val_loss: 0.3783 - val_tp: 587.0000 - val_fp: 47.0000 - val_tn: 182.0000 - val_fn: 71.0000 - val_accuracy: 0.8670 - val_precision: 0.9259 - val_recall: 0.8921 - val_auc: 0.9197
+Epoch 7/20
+259/259 [==============================] - 37s 144ms/step - loss: 0.3583 - tp: 2544.0000 - fp: 152.0000 - tn: 934.0000 - fn: 507.0000 - accuracy: 0.8407 - precision: 0.9436 - recall: 0.8338 - auc: 0.9201 - val_loss: 0.3548 - val_tp: 530.0000 - val_fp: 25.0000 - val_tn: 204.0000 - val_fn: 128.0000 - val_accuracy: 0.8275 - val_precision: 0.9550 - val_recall: 0.8055 - val_auc: 0.9213
+Epoch 8/20
+259/259 [==============================] - 37s 144ms/step - loss: 0.3443 - tp: 2544.0000 - fp: 125.0000 - tn: 961.0000 - fn: 507.0000 - accuracy: 0.8472 - precision: 0.9532 - recall: 0.8338 - auc: 0.9259 - val_loss: 0.3419 - val_tp: 543.0000 - val_fp: 20.0000 - val_tn: 209.0000 - val_fn: 115.0000 - val_accuracy: 0.8478 - val_precision: 0.9645 - val_recall: 0.8252 - val_auc: 0.9346
+Epoch 9/20
+
+259/259 [==============================] - 37s 144ms/step - loss: 0.3241 - tp: 2585.0000 - fp: 130.0000 - tn: 956.0000 - fn: 466.0000 - accuracy: 0.8559 - precision: 0.9521 - recall: 0.8473 - auc: 0.9348 - val_loss: 0.3551 - val_tp: 595.0000 - val_fp: 44.0000 - val_tn: 185.0000 - val_fn: 63.0000 - val_accuracy: 0.8794 - val_precision: 0.9311 - val_recall: 0.9043 - val_auc: 0.9337
+Epoch 10/20
+259/259 [==============================] - 37s 144ms/step - loss: 0.3338 - tp: 2573.0000 - fp: 125.0000 - tn: 961.0000 - fn: 478.0000 - accuracy: 0.8542 - precision: 0.9537 - recall: 0.8433 - auc: 0.9297 - val_loss: 0.2788 - val_tp: 552.0000 - val_fp: 10.0000 - val_tn: 219.0000 - val_fn: 106.0000 - val_accuracy: 0.8692 - val_precision: 0.9822 - val_recall: 0.8389 - val_auc: 0.9536
+Epoch 11/20
+259/259 [==============================] - 37s 144ms/step - loss: 0.3036 - tp: 2642.0000 - fp: 108.0000 - tn: 978.0000 - fn: 409.0000 - accuracy: 0.8750 - precision: 0.9607 - recall: 0.8659 - auc: 0.9418 - val_loss: 0.3388 - val_tp: 562.0000 - val_fp: 35.0000 - val_tn: 194.0000 - val_fn: 96.0000 - val_accuracy: 0.8523 - val_precision: 0.9414 - val_recall: 0.8541 - val_auc: 0.9280
+Epoch 12/20
+259/259 [==============================] - 38s 146ms/step - loss: 0.2973 - tp: 2649.0000 - fp: 97.0000 - tn: 989.0000 - fn: 402.0000 - accuracy: 0.8794 - precision: 0.9647 - recall: 0.8682 - auc: 0.9433 - val_loss: 0.2728 - val_tp: 537.0000 - val_fp: 9.0000 - val_tn: 220.0000 - val_fn: 121.0000 - val_accuracy: 0.8534 - val_precision: 0.9835 - val_recall: 0.8161 - val_auc: 0.9609
+Epoch 13/20
+259/259 [==============================] - 38s 145ms/step - loss: 0.3043 - tp: 2634.0000 - fp: 115.0000 - tn: 971.0000 - fn: 417.0000 - accuracy: 0.8714 - precision: 0.9582 - recall: 0.8633 - auc: 0.9419 - val_loss: 0.2815 - val_tp: 553.0000 - val_fp: 14.0000 - val_tn: 215.0000 - val_fn: 105.0000 - val_accuracy: 0.8658 - val_precision: 0.9753 - val_recall: 0.8404 - val_auc: 0.9528
+Epoch 14/20
+259/259 [==============================] - 37s 144ms/step - loss: 0.2880 - tp: 2678.0000 - fp: 105.0000 - tn: 981.0000 - fn: 373.0000 - accuracy: 0.8845 - precision: 0.9623 - recall: 0.8777 - auc: 0.9477 - val_loss: 0.3941 - val_tp: 598.0000 - val_fp: 58.0000 - val_tn: 171.0000 - val_fn: 60.0000 - val_accuracy: 0.8670 - val_precision: 0.9116 - val_recall: 0.9088 - val_auc: 0.9219
+Epoch 15/20
+259/259 [==============================] - 38s 145ms/step - loss: 0.2891 - tp: 2671.0000 - fp: 114.0000 - tn: 972.0000 - fn: 380.0000 - accuracy: 0.8806 - precision: 0.9591 - recall: 0.8755 - auc: 0.9475 - val_loss: 0.3009 - val_tp: 588.0000 - val_fp: 33.0000 - val_tn: 196.0000 - val_fn: 70.0000 - val_accuracy: 0.8839 - val_precision: 0.9469 - val_recall: 0.8936 - val_auc: 0.9481
+Epoch 16/20
+259/259 [==============================] - 38s 148ms/step - loss: 0.2858 - tp: 2663.0000 - fp: 101.0000 - tn: 985.0000 - fn: 388.0000 - accuracy: 0.8818 - precision: 0.9635 - recall: 0.8728 - auc: 0.9493 - val_loss: 0.2544 - val_tp: 555.0000 - val_fp: 8.0000 - val_tn: 221.0000 - val_fn: 103.0000 - val_accuracy: 0.8749 - val_precision: 0.9858 - val_recall: 0.8435 - val_auc: 0.9622
+Epoch 17/20
+259/259 [==============================] - 38s 145ms/step - loss: 0.2744 - tp: 2688.0000 - fp: 101.0000 - tn: 985.0000 - fn: 363.0000 - accuracy: 0.8878 - precision: 0.9638 - recall: 0.8810 - auc: 0.9521 - val_loss: 0.2353 - val_tp: 575.0000 - val_fp: 10.0000 - val_tn: 219.0000 - val_fn: 83.0000 - val_accuracy: 0.8952 - val_precision: 0.9829 - val_recall: 0.8739 - val_auc: 0.9688
+Epoch 18/20
+259/259 [==============================] - 38s 145ms/step - loss: 0.2761 - tp: 2685.0000 - fp: 100.0000 - tn: 986.0000 - fn: 366.0000 - accuracy: 0.8874 - precision: 0.9641 - recall: 0.8800 - auc: 0.9525 - val_loss: 0.2978 - val_tp: 621.0000 - val_fp: 44.0000 - val_tn: 185.0000 - val_fn: 37.0000 - val_accuracy: 0.9087 - val_precision: 0.9338 - val_recall: 0.9438 - val_auc: 0.9574
+Epoch 19/20
+259/259 [==============================] - 37s 144ms/step - loss: 0.2664 - tp: 2689.0000 - fp: 102.0000 - tn: 984.0000 - fn: 362.0000 - accuracy: 0.8878 - precision: 0.9635 - recall: 0.8814 - auc: 0.9547 - val_loss: 0.2725 - val_tp: 599.0000 - val_fp: 28.0000 - val_tn: 201.0000 - val_fn: 59.0000 - val_accuracy: 0.9019 - val_precision: 0.9553 - val_recall: 0.9103 - val_auc: 0.9565
+Epoch 20/20
+259/259 [==============================] - 38s 146ms/step - loss: 0.2617 - tp: 2698.0000 - fp: 99.0000 - tn: 987.0000 - fn: 353.0000 - accuracy: 0.8907 - precision: 0.9646 - recall: 0.8843 - auc: 0.9569 - val_loss: 0.2974 - val_tp: 619.0000 - val_fp: 39.0000 - val_tn: 190.0000 - val_fn: 39.0000 - val_accuracy: 0.9121 - val_precision: 0.9407 - val_recall: 0.9407 - val_auc: 0.9548
+INFO:tensorflow:Assets written to: models\dense_2ndpass_56\assets
+Model: "sequential_26"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+conv2d_153 (Conv2D)          (None, 224, 224, 24)      240       
+_________________________________________________________________
+max_pooling2d_152 (MaxPoolin (None, 112, 112, 24)      0         
+_________________________________________________________________
+conv2d_154 (Conv2D)          (None, 112, 112, 24)      5208      
+_________________________________________________________________
+max_pooling2d_153 (MaxPoolin (None, 56, 56, 24)        0         
+_________________________________________________________________
+conv2d_155 (Conv2D)          (None, 56, 56, 48)        10416     
+_________________________________________________________________
+max_pooling2d_154 (MaxPoolin (None, 28, 28, 48)        0         
+_________________________________________________________________
+conv2d_156 (Conv2D)          (None, 28, 28, 72)        31176     
+_________________________________________________________________
+max_pooling2d_155 (MaxPoolin (None, 14, 14, 72)        0         
+_________________________________________________________________
+conv2d_157 (Conv2D)          (None, 14, 14, 96)        62304     
+_________________________________________________________________
+max_pooling2d_156 (MaxPoolin (None, 7, 7, 96)          0         
+_________________________________________________________________
+conv2d_158 (Conv2D)          (None, 7, 7, 120)         103800    
+_________________________________________________________________
+max_pooling2d_157 (MaxPoolin (None, 4, 4, 120)         0         
+_________________________________________________________________
+flatten_26 (Flatten)         (None, 1920)              0         
+_________________________________________________________________
+dense_52 (Dense)             (None, 60)                115260    
+_________________________________________________________________
+dense_53 (Dense)             (None, 1)                 61        
+=================================================================
+Total params: 328,465
+Trainable params: 328,465
+Non-trainable params: 0
+_________________________________________________________________
+
+Fitting with Dense layer size = 8192 .
+
+WARNING:tensorflow:sample_weight modes were coerced from
+  ...
+    to  
+  ['...']
+WARNING:tensorflow:sample_weight modes were coerced from
+  ...
+    to  
+  ['...']
+Train for 259 steps, validate for 56 steps
+Epoch 1/20
+259/259 [==============================] - 39s 151ms/step - loss: 0.5832 - tp: 2104.0000 - fp: 349.0000 - tn: 737.0000 - fn: 947.0000 - accuracy: 0.6867 - precision: 0.8577 - recall: 0.6896 - auc: 0.7613 - val_loss: 0.4479 - val_tp: 549.0000 - val_fp: 51.0000 - val_tn: 178.0000 - val_fn: 109.0000 - val_accuracy: 0.8196 - val_precision: 0.9150 - val_recall: 0.8343 - val_auc: 0.8746
+Epoch 2/20
+259/259 [==============================] - 37s 145ms/step - loss: 0.4568 - tp: 2318.0000 - fp: 165.0000 - tn: 921.0000 - fn: 733.0000 - accuracy: 0.7829 - precision: 0.9335 - recall: 0.7598 - auc: 0.8676 - val_loss: 0.3846 - val_tp: 562.0000 - val_fp: 41.0000 - val_tn: 188.0000 - val_fn: 96.0000 - val_accuracy: 0.8455 - val_precision: 0.9320 - val_recall: 0.8541 - val_auc: 0.9141
+Epoch 3/20
+
+259/259 [==============================] - 37s 144ms/step - loss: 0.4108 - tp: 2431.0000 - fp: 148.0000 - tn: 938.0000 - fn: 620.0000 - accuracy: 0.8144 - precision: 0.9426 - recall: 0.7968 - auc: 0.8915 - val_loss: 0.3900 - val_tp: 583.0000 - val_fp: 49.0000 - val_tn: 180.0000 - val_fn: 75.0000 - val_accuracy: 0.8602 - val_precision: 0.9225 - val_recall: 0.8860 - val_auc: 0.9164
+Epoch 4/20
+259/259 [==============================] - 37s 145ms/step - loss: 0.3824 - tp: 2461.0000 - fp: 131.0000 - tn: 955.0000 - fn: 590.0000 - accuracy: 0.8257 - precision: 0.9495 - recall: 0.8066 - auc: 0.9064 - val_loss: 0.3941 - val_tp: 507.0000 - val_fp: 16.0000 - val_tn: 213.0000 - val_fn: 151.0000 - val_accuracy: 0.8117 - val_precision: 0.9694 - val_recall: 0.7705 - val_auc: 0.9136
+Epoch 5/20
+259/259 [==============================] - 37s 145ms/step - loss: 0.3634 - tp: 2475.0000 - fp: 124.0000 - tn: 962.0000 - fn: 576.0000 - accuracy: 0.8308 - precision: 0.9523 - recall: 0.8112 - auc: 0.9156 - val_loss: 0.3208 - val_tp: 552.0000 - val_fp: 24.0000 - val_tn: 205.0000 - val_fn: 106.0000 - val_accuracy: 0.8534 - val_precision: 0.9583 - val_recall: 0.8389 - val_auc: 0.9303
+Epoch 6/20
+259/259 [==============================] - 37s 145ms/step - loss: 0.3606 - tp: 2499.0000 - fp: 114.0000 - tn: 972.0000 - fn: 552.0000 - accuracy: 0.8390 - precision: 0.9564 - recall: 0.8191 - auc: 0.9178 - val_loss: 0.3437 - val_tp: 538.0000 - val_fp: 20.0000 - val_tn: 209.0000 - val_fn: 120.0000 - val_accuracy: 0.8422 - val_precision: 0.9642 - val_recall: 0.8176 - val_auc: 0.9256
+Epoch 7/20
+259/259 [==============================] - 38s 146ms/step - loss: 0.3401 - tp: 2533.0000 - fp: 120.0000 - tn: 966.0000 - fn: 518.0000 - accuracy: 0.8458 - precision: 0.9548 - recall: 0.8302 - auc: 0.9277 - val_loss: 0.3211 - val_tp: 588.0000 - val_fp: 35.0000 - val_tn: 194.0000 - val_fn: 70.0000 - val_accuracy: 0.8816 - val_precision: 0.9438 - val_recall: 0.8936 - val_auc: 0.9397
+Epoch 8/20
+259/259 [==============================] - 38s 146ms/step - loss: 0.3291 - tp: 2564.0000 - fp: 127.0000 - tn: 959.0000 - fn: 487.0000 - accuracy: 0.8516 - precision: 0.9528 - recall: 0.8404 - auc: 0.9323 - val_loss: 0.3557 - val_tp: 483.0000 - val_fp: 7.0000 - val_tn: 222.0000 - val_fn: 175.0000 - val_accuracy: 0.7948 - val_precision: 0.9857 - val_recall: 0.7340 - val_auc: 0.9453
+Epoch 9/20
+259/259 [==============================] - 37s 145ms/step - loss: 0.3340 - tp: 2555.0000 - fp: 126.0000 - tn: 960.0000 - fn: 496.0000 - accuracy: 0.8496 - precision: 0.9530 - recall: 0.8374 - auc: 0.9297 - val_loss: 0.3079 - val_tp: 608.0000 - val_fp: 36.0000 - val_tn: 193.0000 - val_fn: 50.0000 - val_accuracy: 0.9030 - val_precision: 0.9441 - val_recall: 0.9240 - val_auc: 0.9483
+Epoch 10/20
+259/259 [==============================] - 37s 145ms/step - loss: 0.3128 - tp: 2595.0000 - fp: 114.0000 - tn: 972.0000 - fn: 456.0000 - accuracy: 0.8622 - precision: 0.9579 - recall: 0.8505 - auc: 0.9379 - val_loss: 0.3472 - val_tp: 491.0000 - val_fp: 5.0000 - val_tn: 224.0000 - val_fn: 167.0000 - val_accuracy: 0.8061 - val_precision: 0.9899 - val_recall: 0.7462 - val_auc: 0.9478
+Epoch 11/20
+259/259 [==============================] - 38s 145ms/step - loss: 0.3129 - tp: 2616.0000 - fp: 114.0000 - tn: 972.0000 - fn: 435.0000 - accuracy: 0.8673 - precision: 0.9582 - recall: 0.8574 - auc: 0.9388 - val_loss: 0.2801 - val_tp: 565.0000 - val_fp: 17.0000 - val_tn: 212.0000 - val_fn: 93.0000 - val_accuracy: 0.8760 - val_precision: 0.9708 - val_recall: 0.8587 - val_auc: 0.9539
+Epoch 12/20
+259/259 [==============================] - 37s 145ms/step - loss: 0.3015 - tp: 2631.0000 - fp: 104.0000 - tn: 982.0000 - fn: 420.0000 - accuracy: 0.8733 - precision: 0.9620 - recall: 0.8623 - auc: 0.9414 - val_loss: 0.2817 - val_tp: 563.0000 - val_fp: 17.0000 - val_tn: 212.0000 - val_fn: 95.0000 - val_accuracy: 0.8737 - val_precision: 0.9707 - val_recall: 0.8556 - val_auc: 0.9502
+Epoch 13/20
+259/259 [==============================] - 37s 145ms/step - loss: 0.2958 - tp: 2646.0000 - fp: 103.0000 - tn: 983.0000 - fn: 405.0000 - accuracy: 0.8772 - precision: 0.9625 - recall: 0.8673 - auc: 0.9444 - val_loss: 0.2783 - val_tp: 584.0000 - val_fp: 28.0000 - val_tn: 201.0000 - val_fn: 74.0000 - val_accuracy: 0.8850 - val_precision: 0.9542 - val_recall: 0.8875 - val_auc: 0.9512
+Epoch 14/20
+259/259 [==============================] - 38s 145ms/step - loss: 0.2959 - tp: 2660.0000 - fp: 114.0000 - tn: 972.0000 - fn: 391.0000 - accuracy: 0.8779 - precision: 0.9589 - recall: 0.8718 - auc: 0.9451 - val_loss: 0.2713 - val_tp: 581.0000 - val_fp: 23.0000 - val_tn: 206.0000 - val_fn: 77.0000 - val_accuracy: 0.8873 - val_precision: 0.9619 - val_recall: 0.8830 - val_auc: 0.9532
+Epoch 15/20
+259/259 [==============================] - 37s 144ms/step - loss: 0.2698 - tp: 2698.0000 - fp: 101.0000 - tn: 985.0000 - fn: 353.0000 - accuracy: 0.8903 - precision: 0.9639 - recall: 0.8843 - auc: 0.9541 - val_loss: 0.2516 - val_tp: 602.0000 - val_fp: 23.0000 - val_tn: 206.0000 - val_fn: 56.0000 - val_accuracy: 0.9109 - val_precision: 0.9632 - val_recall: 0.9149 - val_auc: 0.9635
+Epoch 16/20
+259/259 [==============================] - 37s 144ms/step - loss: 0.2710 - tp: 2693.0000 - fp: 101.0000 - tn: 985.0000 - fn: 358.0000 - accuracy: 0.8891 - precision: 0.9639 - recall: 0.8827 - auc: 0.9538 - val_loss: 0.2505 - val_tp: 579.0000 - val_fp: 18.0000 - val_tn: 211.0000 - val_fn: 79.0000 - val_accuracy: 0.8906 - val_precision: 0.9698 - val_recall: 0.8799 - val_auc: 0.9586
+Epoch 17/20
+259/259 [==============================] - 38s 146ms/step - loss: 0.2652 - tp: 2707.0000 - fp: 94.0000 - tn: 992.0000 - fn: 344.0000 - accuracy: 0.8941 - precision: 0.9664 - recall: 0.8873 - auc: 0.9550 - val_loss: 0.2745 - val_tp: 551.0000 - val_fp: 17.0000 - val_tn: 212.0000 - val_fn: 107.0000 - val_accuracy: 0.8602 - val_precision: 0.9701 - val_recall: 0.8374 - val_auc: 0.9553
+Epoch 18/20
+259/259 [==============================] - 38s 146ms/step - loss: 0.2642 - tp: 2686.0000 - fp: 108.0000 - tn: 978.0000 - fn: 365.0000 - accuracy: 0.8857 - precision: 0.9613 - recall: 0.8804 - auc: 0.9555 - val_loss: 0.2496 - val_tp: 581.0000 - val_fp: 20.0000 - val_tn: 209.0000 - val_fn: 77.0000 - val_accuracy: 0.8906 - val_precision: 0.9667 - val_recall: 0.8830 - val_auc: 0.9620
+Epoch 19/20
+259/259 [==============================] - 38s 145ms/step - loss: 0.2561 - tp: 2711.0000 - fp: 98.0000 - tn: 988.0000 - fn: 340.0000 - accuracy: 0.8941 - precision: 0.9651 - recall: 0.8886 - auc: 0.9575 - val_loss: 0.2444 - val_tp: 587.0000 - val_fp: 15.0000 - val_tn: 214.0000 - val_fn: 71.0000 - val_accuracy: 0.9030 - val_precision: 0.9751 - val_recall: 0.8921 - val_auc: 0.9622
+Epoch 20/20
+259/259 [==============================] - 39s 150ms/step - loss: 0.2702 - tp: 2691.0000 - fp: 90.0000 - tn: 996.0000 - fn: 360.0000 - accuracy: 0.8912 - precision: 0.9676 - recall: 0.8820 - auc: 0.9540 - val_loss: 0.3072 - val_tp: 636.0000 - val_fp: 46.0000 - val_tn: 183.0000 - val_fn: 22.0000 - val_accuracy: 0.9233 - val_precision: 0.9326 - val_recall: 0.9666 - val_auc: 0.9605
+INFO:tensorflow:Assets written to: models\dense_2ndpass_60\assets
